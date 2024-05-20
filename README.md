@@ -1,5 +1,5 @@
-# Collosal
-![thumbnail](https://raw.githubusercontent.com/iceboy1406/collosal/main/public/images/screenshots/home.png)
+# website
+
 <p align="center">
 
 
