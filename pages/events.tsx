@@ -1,3 +1,4 @@
+import Button from 'components/atoms/Button'
 import LineDivider from 'components/atoms/LineDivider'
 import PageSentence from 'components/molecules/PageSentence'
 import SectionSentence from 'components/molecules/SectionSentence'
@@ -158,6 +159,12 @@ const Events = () => {
             paragraph="We held a hackathon in machakos university that saw over 50+ participants and 10 projects built."
           />
         </aside>
+      </section>
+
+      <section className='grid place-items-center'>
+        <div className="">
+          <Button value='Load More' color='white' style='light' />
+        </div>
       </section>
 
       <LineDivider />

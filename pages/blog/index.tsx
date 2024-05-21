@@ -10,67 +10,42 @@ import randomString from 'utils/randomString'
 const Blog = () => {
   const blogListData: BlogCardProps[] = [
     {
-      authorAvatarSrc: '/images/blog-author-1.webp',
-      authorName: 'Jane Cooper',
-      launchDate: 'Mar 18',
-      lead: 'People have been using wrong SEO techniques on their websites.',
-      readTime: '5 min',
-      thumbnailSrc: '/images/blog-thumbnail-1.webp',
-      title: 'SEO tricks that can increase the traffic of your website',
+      authorAvatarSrc: '/images/Orlah.png',
+      authorName: 'Peace Adekoya',
+      launchDate: 'April 12, 2024',
+      lead: 'The Web3 Community has just experienced a new groundbreaking initiative: the Olympus Acceleration platform. This platform represents a significant step toward Web3 acceleration.',
+      readTime: '',
+      thumbnailSrc: '/images/Blog1.png',
+      title: 'Introducing Olympus: The first Web3 Accelerator Platform on the Internet Computer',
     },
     {
-      authorAvatarSrc: '/images/blog-author-2.webp',
-      authorName: 'Alex Berner',
-      launchDate: 'Mar 11',
-      lead: 'All these plugins are free and you can use them forever',
-      readTime: '3 min',
-      thumbnailSrc: '/images/blog-thumbnail-2.webp',
-      title: '10 Figma Plugins that will increase your productivity',
+      authorAvatarSrc: '/images/Orlah.png',
+      authorName: 'Peace Adekoya',
+      launchDate: 'Mar 28, 2024',
+      lead: 'Let us explore how developers can use AI, especially within ICP and OpenAI collaboration to take their blockchain projects to the next level!',
+      readTime: '',
+      thumbnailSrc: '/images/Blog2.png',
+      title: 'Enhancing Blockchain Development with AI: A Guide for Developers',
     },
     {
-      authorAvatarSrc: '/images/blog-author-3.webp',
-      authorName: 'Anne Grane',
-      launchDate: 'Mar 10',
-      lead: 'Step by step setting up the server and deploying the application',
-      readTime: '20 min',
-      thumbnailSrc: '/images/blog-thumbnail-3.webp',
-      title: 'How to deploy a Node JS application to a VPS',
+      authorAvatarSrc: '/images/Orlah.png',
+      authorName: 'Peace Adekoya',
+      launchDate: 'Mar 13, 2024',
+      lead: 'In this guide, we walk through how to build a token on ICP from conceptualization to deplpoyement',
+      readTime: '',
+      thumbnailSrc: '/images/Blog3.png',
+      title: 'How to build a token on ICP: A step by step guide',
     },
-    {
-      authorAvatarSrc: '/images/blog-author-4.webp',
-      authorName: 'Ban Steward',
-      launchDate: 'Feb 20',
-      lead: 'Small images can speed up website load times',
-      readTime: '8 min',
-      thumbnailSrc: '/images/blog-thumbnail-4.webp',
-      title: 'How to compress image size without losing quality',
-    },
-    {
-      authorAvatarSrc: '/images/blog-author-5.webp',
-      authorName: 'Rob Arace',
-      launchDate: 'Feb 23',
-      lead: 'Improve the SEO techniques that you have used so far',
-      readTime: '12 min',
-      thumbnailSrc: '/images/blog-thumbnail-5.webp',
-      title: 'Why is Google still not recognizing my website?',
-    },
-    {
-      authorAvatarSrc: '/images/blog-author-6.webp',
-      authorName: 'Don Rohiman',
-      launchDate: 'Jan 28',
-      lead: 'Get accurate error messages when the application crashes',
-      readTime: '12 min',
-      thumbnailSrc: '/images/blog-thumbnail-6.webp',
-      title: 'Monitor your application when errors occur in production',
-    },
+    
   ]
   return (
     <PageTemplate>
       <section className="grid place-items-center">
         <div className="sm:w-10/12 md:w-8/12 lg:w-6/12 text-center" data-aos="zoom-in-uo">
           <PageSentence
-            badge="BLOG"
-            title="Get precise knowledge wherever you are"
+            badge="ICP Hub Kenya Blog"
+            title="All about blockchain"
+            description='Check out some of our blogs and learn how ICP is revolutionizing the blockchain space'
           />
         </div> 
       </section>
@@ -95,9 +70,11 @@ const Blog = () => {
             )
           })}
         </div>
+
         <div className="">
           <Button value='Load More' color='white' style='light' />
         </div>
+
       </section>
     </PageTemplate>
   )
