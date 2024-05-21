@@ -15,11 +15,14 @@
     "static/development/_middlewareManifest.js"
   ],
   "pages": {
+<<<<<<< HEAD
     "/": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/index.js"
     ],
+=======
+>>>>>>> refs/remotes/origin/master
     "/_app": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
@@ -30,6 +33,7 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
+<<<<<<< HEAD
     "/about": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
@@ -39,6 +43,17 @@
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/contact.js"
+=======
+    "/events": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/events.js"
+    ],
+    "/project": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/project.js"
+>>>>>>> refs/remotes/origin/master
     ]
   },
   "ampFirstPages": []
