@@ -44,28 +44,20 @@ const Footer = () => {
               </div>
             </div>
 
-            {/* <div className="space-y-5">
-              <Text value="COMPANY" textStyle="FooterLinkGroupTitle" />
+            <div className="space-y-5">
+              <Text value="Education" textStyle="FooterLinkGroupTitle" />
               <div className="space-y-[10px]">
-                <NavLink value="About" href="/about" />
-                <NavLink value="Contact" href="/contact" />
-                <NavLink value="Send Quote" href="/quote" />
-                <NavLink value="Privacy Policy" href="/privacy-policy" />
-                <NavLink value="Term of Service" href="/term-of-service" />
-                <NavLink value="Jobs" href="/jobs" />
-                <NavLink value="Blogs" href="/blog" />
+                <NavLink value="Dacade course" href="https://dacade.org/communities/icp" />
+                <NavLink value="About" href="http://localhost:3000/about" />
               </div>
             </div>
             <div className="space-y-5">
-              <Text value="RESOURCES" textStyle="FooterLinkGroupTitle" />
+              <Text value="Blog" textStyle="FooterLinkGroupTitle" />
               <div className="space-y-[10px]">
-                <NavLink value="Support" href="/support" />
-                <NavLink value="Documentation" href="/documentation" />
-                <NavLink value="License" href="/license" />
-                <NavLink value="Sitemap" href="/sitemap" />
+                <NavLink value="Our blog posts" href="/blog" />
               </div>
-            </div> */}
-            
+            </div>
+
           </div>
         </div>
       </footer>
