@@ -23,23 +23,28 @@ const Footer = () => {
           </div>
           <div className="grid grid-cols-2 gap-8 sm:grid-cols-3 lg:gap-16 xl:gap-20">
             <div className="space-y-5">
-              <Text value="SERVICES" textStyle="FooterLinkGroupTitle" />
+              <Text value="Follow us" textStyle="FooterLinkGroupTitle" />
               <div className="space-y-[10px]">
+
                 <NavLink
-                  value="Web Development"
-                  href="/service/detail"
+                  value="Twitter"
+                  href="https://twitter.com/icphub_KE"
                 />
+
                 <NavLink
-                  value="App Development"
-                  href="/service/detail"
+                  value="Instagram"
+                  href="https://www.instagram.com/icphub_ke/"
                 />
-                <NavLink value="UI Design" href="/service/detail" />
-                <NavLink value="Consultation" href="/service/detail" />
-                <NavLink value="Maintenance" href="/service/detail" />
-                <NavLink value="Pricing" href="/pricing" />
+
+                <NavLink 
+                  value="LinkedIn" 
+                  href="https://www.linkedin.com/company/icphub-ke/" 
+                />
+               
               </div>
             </div>
-            <div className="space-y-5">
+
+            {/* <div className="space-y-5">
               <Text value="COMPANY" textStyle="FooterLinkGroupTitle" />
               <div className="space-y-[10px]">
                 <NavLink value="About" href="/about" />
@@ -59,7 +64,8 @@ const Footer = () => {
                 <NavLink value="License" href="/license" />
                 <NavLink value="Sitemap" href="/sitemap" />
               </div>
-            </div>
+            </div> */}
+            
           </div>
         </div>
       </footer>
