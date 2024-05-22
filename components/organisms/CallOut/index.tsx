@@ -12,8 +12,8 @@ const CallOut = () => {
           <SectionSentence title="ICP Hub Kenya is dedicated to propelling the advancement of Blockchain Technology within our region and beyond." />
         </div>
         <div className="flex flex-col gap-5 w-full sm:w-fit sm:flex-row lg:w-full lg:justify-end">
-          <ButtonLink value="Join Us" href="/quote" />
-          <ButtonLink value="Contact Us" color="white" style="light" href="/faq" />
+          <ButtonLink value="Join Us" href="https://t.me/icphub_KE" />
+          <ButtonLink value="Contact Us" color="white" style="light" href="/contact" />
         </div>
       </section>
       <LineDivider />
