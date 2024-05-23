@@ -69,7 +69,7 @@ const Home = () => {
     {/* Replace the Image component with an iframe for YouTube video */}
     <iframe
       className="w-full h-full absolute inset-0"
-      src="https://youtu.be/mqLoCgpDotI"
+      src="https://www.youtube.com/embed/mqLoCgpDotI"
       title="Video"
       frameBorder="0"
       allowFullScreen
