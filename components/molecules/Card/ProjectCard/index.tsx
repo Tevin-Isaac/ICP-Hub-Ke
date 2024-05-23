@@ -1,20 +1,35 @@
+import Image from 'next/image'
 import Button from 'components/atoms/Button'
 import ButtonLink from 'components/atoms/Button/ButtonLink'
-import LazyCard, { LazyCardProps } from 'components/atoms/LazyCard'
 import Text from 'components/atoms/Text'
-interface ProjectCardProps extends LazyCardProps {
+
+interface ProjectCardProps {
   title: string
   description: string
+  imageSource: string
+  imageAlt: string
+  height?: number
+  width?: number
 }
+
 const ProjectCard = ({
   title,
   description,
-  bottomSquareSize = 'small',
+  imageSource,
+  imageAlt,
   height = 450,
+  width,
 }: ProjectCardProps) => {
   return (
     <div className="w-full">
-      <LazyCard bottomSquareSize={bottomSquareSize} height={height} />
+      <div className="relative w-full overflow-hidden" style={{ height: `${height}px` }}>
+        <Image
+          src={imageSource}
+          alt={imageAlt}
+          layout="fill"
+          objectFit="contain"
+        />
+      </div>
       <div className="flex flex-col place-items-center text-center mt-10">
         <div className="mb-2.5">
           <Text value={title} textStyle="ProjectTitle" />
@@ -28,7 +43,7 @@ const ProjectCard = ({
             color="white"
             radius="pill"
             style="outline"
-            href="/project/detail"
+            href="https://internetcomputer.org/"
           />
         </div>
       </div>

@@ -135,16 +135,39 @@ const Home = () => {
               <ProjectCard
                 title="Dev friendliness"
                 description="Developers can write contracts using popular languages like Rust, TypeScript, or Python and easily incorporate libraries from their respective ecosystem, much like they would in traditional web development."
+                imageSource='/images/DevFriendly2.png'
+                imageAlt='ICP Developer languages'
               />
             </div>
             <div data-aos="flip-right">
               <ProjectCard
                 title="Interoperability"
-                description="ICP can interface with other smart contract blockchains and traditional (Web 2) internet resources via HTTP requests and signing capabilities.For example Chain-Key Cryptography has made this possible. "
-                bottomSquareSize="big"
+                description="ICP can interface with other smart contract blockchains and traditional (Web 2) internet resources via HTTP requests and signing capabilities. Chain-Key Cryptography has made this possible. "
+                imageSource='/images/Interopability.png'
+                imageAlt='Interopability on ICP'
               />
             </div>
           </div>
+
+          <div className="w-full grid grid-cols-1 gap-10 sm:grid-cols-2 sm:gap-5">
+            <div data-aos="flip-left">
+              <ProjectCard
+                title="Everything On-Chain"
+                description="ICP allows developers to host their applications fully on-chain (i.e frontend and smart contract), big thanks to the web-serving capability of canister smart contracts on ICP and their ability to host large amounts of data. DeFi platforms can exist 100% onchain with no dependency on centralized components."
+                imageSource='/images/ICPOnchain.png'
+                imageAlt='Host everything on chain using ICP'
+              />
+            </div>
+            <div data-aos="flip-right">
+              <ProjectCard
+                title="Very very cheap!"
+                description="The cost of storing data on-chain with ICP is just $5 USD per GB per year. This is significantly lower as compared to other chains such as Ethereum and Solana"
+                imageSource='/images/VeryCheap.png'
+                imageAlt='ICP is very cheap as compared to other chains'
+              />
+            </div>
+          </div>
+
         </section>
         {/* Prices */}
         {/* <section className="flex flex-col gap-16 items-center">
