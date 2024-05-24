@@ -11,6 +11,7 @@ import PageTemplate from 'components/templates/PageTemplate'
 import Image from 'next/image'
 import React from 'react'
 import { FiFigma, FiCode, FiBox } from 'react-icons/fi'
+
 const Home = () => {
   return (
     <>
