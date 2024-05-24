@@ -1,17 +1,4 @@
-# Collosal
-![thumbnail](https://raw.githubusercontent.com/iceboy1406/collosal/main/public/images/screenshots/home.png)
-<p align="center">
+# ICP Hub Kenya official site 
+This is the official site for ICP Hub Kenya. Check out the main site over [here](https://icp-hub-ke.vercel.app/)
 
-
-</p>
-
-
-## Technology Used
-
- - [Next JS](https://nextjs.org/) - A React JS Framework and alternative boilerplate than CRA. I use Typescript btw
- - [Tailwind CSS](https://tailwindcss.com/) - An utility class CSS framework
- - [Swiper JS](https://swiperjs.com/) - Library for carousel that easy to custom
- - [React Icon](https://github.com/react-icons/react-icons) - A library that include so many popular icons with SVG based
- - [AOS](https://github.com/michalsnik/aos) - A library to help control animation when scroll
- 
-## Author
+![Official Site for ICP Hub Kenya](./UI.png)
