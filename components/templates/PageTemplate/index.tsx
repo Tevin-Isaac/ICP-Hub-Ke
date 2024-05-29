@@ -44,9 +44,10 @@ const PageTemplate = ({ children, title = 'ICP Hub Kenya' }: PageTemplateProps) 
         </div>
       ) : (
         <>
-          <div className="w-full h-fit min-h-screen bg-[#8b5b5b] overflow-x-hidden">
-            <div className="w-full h-full min-h-screen relative bg-[url('/images/page-background.svg')] bg-cover">
-              <div className="w-full h-full min-h-screen relative backdrop-blur-[175px] bg-dark/[.80] overflow-visible">
+        {/* bg-dark/[.80] backdrop-blur-[175px] */}
+          <div className="w-full h-fit min-h-screen bg-[#632020] overflow-x-hidden">
+            <div className="w-full h-full min-h-screen relative bg-cover">
+              <div className="w-full h-full min-h-screen relative overflow-visible">
                 {/* Space for navbar, because navbar is absolute */}
                 <div className="h-[105px]"></div>
                 {/* Padding */}
