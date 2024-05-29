@@ -57,7 +57,7 @@ const Text = ({ value, textStyle }: TextProps) => {
   const getTextStyle = (): string => {
     switch (textStyle) {
       case 'SectionBadge':
-        return 'text-badge font-semibold text-base leading-8'
+        return 'text-[#F0BC39] font-semibold text-base leading-8'
       case 'SectionBadgeError':
         return 'text-error font-semibold text-base leading-8'
       case 'SectionTitle':
