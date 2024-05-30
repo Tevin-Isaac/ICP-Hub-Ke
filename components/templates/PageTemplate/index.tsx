@@ -8,8 +8,13 @@ import useGetBrowserName from 'hooks/useGetBrowserName'
 interface PageTemplateProps {
   children: ReactNode[] | JSX.Element
   title?: string
+  light?: boolean
 }
-const PageTemplate = ({ children, title = 'ICP Hub Kenya' }: PageTemplateProps) => {
+const PageTemplate = ({ 
+  children, 
+  title = 'ICP Hub Kenya', 
+  light=false, 
+ }: PageTemplateProps) => {
   const browserName = useGetBrowserName()
   return (
     <>
@@ -45,7 +50,11 @@ const PageTemplate = ({ children, title = 'ICP Hub Kenya' }: PageTemplateProps) 
       ) : (
         <>
         {/* bg-dark/[.80] backdrop-blur-[175px] */}
-          <div className="w-full h-fit min-h-screen bg-[#632020] overflow-x-hidden">
+          <div
+            className={`w-full h-fit min-h-screen ${
+              light ? 'bg-[#FFEDED]' : 'bg-[#632020]'
+            } overflow-x-hidden`}
+          >
             <div className="w-full h-full min-h-screen relative bg-cover">
               <div className="w-full h-full min-h-screen relative overflow-visible">
                 {/* Space for navbar, because navbar is absolute */}
@@ -53,10 +62,10 @@ const PageTemplate = ({ children, title = 'ICP Hub Kenya' }: PageTemplateProps) 
                 {/* Padding */}
                 <Container>
                   {children}
-                  <div data-aos="fade-right">
+                  {/* <div data-aos="fade-right">
                     <CallOut />
                   </div>
-                  <Footer />
+                  <Footer /> */}
                 </Container>
               </div>
             </div>

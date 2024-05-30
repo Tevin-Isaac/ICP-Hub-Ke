@@ -12,7 +12,7 @@ const ButtonLink = ({
   onClick = () => {},
   size = 'normal',
   style = 'solid',
-  color = 'primary',
+  color = 'primary', 
   radius = 'rounded',
 }: ButtonLinkProps) => {
   return (

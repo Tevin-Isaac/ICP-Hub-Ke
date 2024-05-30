@@ -4,10 +4,12 @@ interface TextProps {
   textStyle:
     | 'SectionBadge'
     | 'SectionBadgeError'
+    | 'SectionBadgeLight'
     | 'SectionParagraph'
     | 'PageTitle'
     | 'PageDescription'
     | 'SectionTitle'
+    | 'SectionTitleLight'
     | 'CardTitle'
     | 'CardParagraph'
     | 'PricingPrice'
@@ -17,7 +19,9 @@ interface TextProps {
     | 'IconListValue'
     | 'IconListLabel'
     | 'ProjectTitle'
+    | 'ProjectTitleLight'
     | 'ProjectDescription'
+    | 'ProjectDescriptionLight'
     | 'SmallCardTitle'
     | 'SmallCardDescription'
     | 'FeatureCardTitle'
@@ -60,8 +64,12 @@ const Text = ({ value, textStyle }: TextProps) => {
         return 'text-[#F0BC39] font-semibold text-base leading-8'
       case 'SectionBadgeError':
         return 'text-error font-semibold text-base leading-8'
+      case 'SectionBadgeLight':
+          return 'text-[#5E2222] font-semibold text-base leading-8'
       case 'SectionTitle':
         return 'text-white font-bold text-3xl leading-12'
+      case 'SectionTitleLight': 
+        return 'text-[#5E2222] font-bold text-3xl leading-12'
       case 'SectionParagraph':
         return 'text-muted font-medium text-base leading-8'
       case 'PageTitle':
@@ -82,8 +90,12 @@ const Text = ({ value, textStyle }: TextProps) => {
         return 'text-white font-medium text-base leading-9'
       case 'ProjectTitle':
         return 'text-white font-bold text-xl leading-8.5'
+      case 'ProjectTitleLight': 
+        return 'text-[#313131] font-bold text-xl leading-8.5'
       case 'ProjectDescription':
         return 'text-muted font-normal text-base leading-8.5'
+      case 'ProjectDescriptionLight':
+        return 'text-[#313131] font-normal text-base leading-8.5'
       case 'ProjectDetailLabel':
         return 'text-muted font-semibold text-sm leading-5'
       case 'ProjectDetailValue':

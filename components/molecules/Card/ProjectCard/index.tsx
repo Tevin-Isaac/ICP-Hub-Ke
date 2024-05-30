@@ -4,8 +4,10 @@ import ButtonLink from 'components/atoms/Button/ButtonLink'
 import Text from 'components/atoms/Text'
 
 interface ProjectCardProps {
-  title: string
-  description: string
+  title?: string
+  lightTitle?: string
+  description?: string
+  lightDescription?: string
   imageSource?: string
   imageAlt?: string
   height?: number
@@ -13,8 +15,10 @@ interface ProjectCardProps {
 }
 
 const ProjectCard = ({
-  title,
-  description,
+  title = '',
+  lightTitle = '',
+  description = '',
+  lightDescription = '',
   imageSource,
   imageAlt,
   height = 450,
@@ -29,19 +33,16 @@ const ProjectCard = ({
       )}
       <div className="flex flex-col place-items-center text-center mt-10">
         <div className="mb-2.5">
-          <Text value={title} textStyle="ProjectTitle" />
+          <Text value={lightTitle || title} textStyle={lightTitle ? 'ProjectTitleLight' : 'ProjectTitle'} />
         </div>
         <div className="mb-9">
-          <Text value={description} textStyle="ProjectDescription" />
+          <Text
+            value={lightDescription || description}
+            textStyle={lightDescription ? 'ProjectDescriptionLight' : 'ProjectDescription'}
+          />
         </div>
         <div className="">
-          <ButtonLink
-            value="Detail"
-            color="white"
-            radius="pill"
-            style="outline"
-            href="https://internetcomputer.org/"
-          />
+          <ButtonLink value="Detail" color="#313131" radius="pill" style="outline" href="https://internetcomputer.org/" />
         </div>
       </div>
     </div>
