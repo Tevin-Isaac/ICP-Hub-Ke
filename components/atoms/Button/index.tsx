@@ -6,7 +6,7 @@ interface ButtonProps {
   onClick?: MouseEventHandler<HTMLButtonElement>
   size?: 'normal' | 'small'
   style?: 'light' | 'outline' | 'solid'
-  color?: 'white' | 'primary' | '#313131'
+  color?: 'white' | 'primary' | '#313131' | '#5E2222'
   radius?: 'pill' | 'rounded'
 }
 
@@ -43,6 +43,8 @@ const Button = forwardRef(
               return 'bg-buttonLight text-white hover:brightness-90'
             case '#313131':
               return 'bg-[#313131] text-white hover:brightness-90'
+            case '#5E2222':
+              return 'bg-[#5E2222] text-white hover:brightness-90'
           }
         case 'outline':
           switch (color) {
@@ -52,6 +54,8 @@ const Button = forwardRef(
               return 'bg-transparent text-white border border-white hover:bg-white hover:text-dark'
             case '#313131':
               return 'bg-transparent text-[#313131] border border-[#313131] hover:bg-[#313131] hover:text-white'
+            case '#5E2222':
+              return 'bg-transparent text-[#5E2222] border border-[#5E2222] hover:bg-[#5E2222] hover:text-white'
           }
         case 'solid':
           switch (color) {
@@ -61,6 +65,8 @@ const Button = forwardRef(
               return 'bg-white text-dark hover:brightness-90'
             case '#313131':
               return 'bg-[#313131] text-white hover:brightness-90'
+            case '#5E2222':
+              return 'bg-[#5E2222] text-white hover:brightness-90'
           }
       }
     }
