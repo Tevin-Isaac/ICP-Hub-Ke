@@ -68,16 +68,16 @@ const Home = () => {
         {/* <LogoList /> */}
         {/* How We Work */}
         <section className="grid grid-cols-1 gap-6 sm:gap-8 place-items-center lg:grid-cols-2">
-  <aside className="w-full h-[400px] relative" data-aos="fade-right">
-    {/* Replace the Image component with an iframe for YouTube video */}
-    <iframe
-      className="w-full h-full absolute inset-0"
-      src="https://www.youtube.com/embed/mqLoCgpDotI"
-      title="Video"
-      frameBorder="0"
-      allowFullScreen
-    ></iframe>
-  </aside>
+        <aside className="w-full h-[400px] relative" data-aos="fade-right">
+          {/* Replace the Image component with an iframe for YouTube video */}
+          <iframe
+            className="w-full h-full absolute inset-0 sm:aspect-w-16 sm:aspect-h-9"
+            src="https://www.youtube.com/embed/mqLoCgpDotI"
+            title="Video"
+            frameBorder="0"
+            allowFullScreen
+          ></iframe>
+        </aside>
   <aside
     className="text-center sm:w-10/12 lg:text-left lg:w-full"
     data-aos="fade-left"
@@ -127,7 +127,7 @@ const Home = () => {
 
       {/* Section with light background */}
       <PageTemplate title="ICP Features" light>
-        <section className="flex flex-col gap-16 items-center">
+        <section data-light-section className="flex flex-col gap-16 items-center">
           <div
             className="text-center sm:w-10/12 md:w-8/12 lg:w-6/12"
             data-aos="zoom-in-up"
