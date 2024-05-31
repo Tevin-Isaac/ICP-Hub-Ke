@@ -13,6 +13,7 @@ import React from 'react'
 import { FiFigma, FiCode, FiBox } from 'react-icons/fi'
 import CallOut from 'components/organisms/CallOut'
 import Footer from 'components/organisms/Footer'
+import Link from 'next/link'
 
 const Home = () => {
   return (
@@ -31,10 +32,9 @@ const Home = () => {
               At the forefront of technology is ICP.Hub Kenya dedicated to advancing the Internet Computer ecosystem.
             </p>
             <div className="button-container">
-              <ButtonLink
-                value="Explore"
-                href="https://internetcomputer.org/"
-              />
+              <Link href="/about" passHref>
+                <ButtonLink value="Explore" href="/about" />
+              </Link>
             </div>
           </div>
         </section> 
@@ -98,13 +98,15 @@ const Home = () => {
                 paragraph="Our team is driven by a shared commitment to empowering individuals and businesses with the transformative potential of this groundbreaking technology. Through innovation, education, and community engagement, we strive to pave the way for a more inclusive and decentralized digital future."
                 badge="OUR TEAM"
               />
-              <ButtonLink
-                value="See Our Team"
-                href="/about"
-                size="small"
-                color="white"
-                style="light"
-              />
+              <Link href="/about" passHref>
+                <ButtonLink
+                  value="See Our Team"
+                  size="small"
+                  color="white"
+                  style="light"
+                  href="/about"
+                />
+              </Link>
             </div>
           </aside>
           <aside
