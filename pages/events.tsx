@@ -11,7 +11,7 @@ const Events = () => {
     <PageTemplate>
 
       <section className="grid place-items-center">
-        <div className="sm:w-10/12 md:w-8/12 lg:w-6/12 2xl:w-5/12 text-center" data-aos="zoom-in-up">
+        <div className="sm:w-10/12 md:w-8/12 lg:w-6/12 2xl:w-5/12 text-center" data-aos="">
           <PageSentence
             badge="UPCOMING EVENTS"
             title="Here are some of our upcoming events"
