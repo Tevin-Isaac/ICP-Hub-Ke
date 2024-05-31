@@ -23,7 +23,7 @@ const Events = () => {
       <LineDivider />
 
       <section className="grid grid-cols-1 lg:grid-cols-2 place-items-center gap-8 lg:gap-5">
-        <aside className="w-full" data-aos="fade-up-right">
+        <aside className="w-full" data-aos="">
           <div className="w-full h-[410px] relative">
             <div>
               <Image
@@ -36,7 +36,7 @@ const Events = () => {
             </div>
           </div>
         </aside>
-        <aside className="sm:w-10/12 md:w-8/12 lg:w-full text-center lg:text-left" data-aos="fade-up-left">
+        <aside className="sm:w-10/12 md:w-8/12 lg:w-full text-center lg:text-left" data-aos="">
           <SectionSentence
             badge="Hackathon"
             title={`Memethon Hackerhouse`}
@@ -48,7 +48,7 @@ const Events = () => {
       </section>
 
       <section className="grid grid-cols-1 lg:grid-cols-2 place-items-center gap-8 lg:gap-5">
-        <aside className="sm:w-10/12 md:w-8/12 lg:w-full text-center lg:text-left" data-aos="fade-up-left">
+        <aside className="sm:w-10/12 md:w-8/12 lg:w-full text-center lg:text-left" data-aos="">
           <SectionSentence
             badge="Hackathon"
             title={`CSH Safari Computer Club Hackathon`}
@@ -57,7 +57,7 @@ const Events = () => {
             linkText='Check out event on luma'
           />
         </aside>
-        <aside className="w-full" data-aos="fade-up-right">
+        <aside className="w-full" data-aos="">
           <div className="w-full h-[410px] relative">
             <div>
               <Image
@@ -77,7 +77,7 @@ const Events = () => {
 
 
       <section className="grid place-items-center">
-        <div className="sm:w-10/12 md:w-8/12 lg:w-6/12 2xl:w-5/12 text-center" data-aos="zoom-in-up">
+        <div className="sm:w-10/12 md:w-8/12 lg:w-6/12 2xl:w-5/12 text-center" data-aos="">
           <PageSentence
             badge="PAST EVENTS"
             title="Here are some of the events we've done"
@@ -88,7 +88,7 @@ const Events = () => {
       <LineDivider />
 
       <section className="grid grid-cols-1 lg:grid-cols-2 place-items-center gap-8 lg:gap-5">
-        <aside className="w-full" data-aos="fade-up-right">
+        <aside className="w-full" data-aos="">
           <div className="w-full h-[410px] relative">
             <div>
               <Image
@@ -110,7 +110,7 @@ const Events = () => {
             </div> */}
           </div>
         </aside>
-        <aside className="sm:w-10/12 md:w-8/12 lg:w-full text-center lg:text-left" data-aos="fade-up-left">
+        <aside className="sm:w-10/12 md:w-8/12 lg:w-full text-center lg:text-left" data-aos="">
           <SectionSentence
             badge="Hackathon and Sponsors"
             title={`ETH Safari`}
@@ -120,14 +120,14 @@ const Events = () => {
       </section>
 
       <section className="grid grid-cols-1 lg:grid-cols-2 place-items-center gap-8 lg:gap-5">
-        <aside className="sm:w-10/12 md:w-8/12 lg:w-full text-center lg:text-left" data-aos="fade-up-right">
+        <aside className="sm:w-10/12 md:w-8/12 lg:w-full text-center lg:text-left" data-aos="">
           <SectionSentence
             badge="Hackathon"
             title={`Pwani Innovation Week`}
             paragraph="We participated in Pwani Innovation Week 2023 hacakthon. It was succesfull as we had over 10+ projects built on top of ICP."
           />
         </aside>
-        <aside className="w-full" data-aos="fade-up-left">
+        <aside className="w-full" data-aos="">
           <div className="w-full h-[410px] relative">
             <Image
               src={'/images/PIW2.jpg'}
@@ -141,7 +141,7 @@ const Events = () => {
       </section>
 
       <section className="grid grid-cols-1 lg:grid-cols-2 place-items-center gap-8 lg:gap-5">
-        <aside className="w-full" data-aos="fade-up-right">
+        <aside className="w-full" data-aos="">
           <div className="w-full h-[410px] relative">
             <Image
               src={'/images/MachakosHackathon.jpg'}
@@ -152,7 +152,7 @@ const Events = () => {
             />
           </div>
         </aside>
-        <aside className="sm:w-10/12 md:w-8/12 lg:w-full text-center lg:text-left" data-aos="fade-up-left">
+        <aside className="sm:w-10/12 md:w-8/12 lg:w-full text-center lg:text-left" data-aos="">
           <SectionSentence
             badge="Hackathon"
             title={`Machakos University Hackathon`}

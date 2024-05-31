@@ -37,3 +37,66 @@
     @apply border-2 border-primary mt-0 !important;
   }
 }
+/* Add this CSS code to create a particle animation inside the white background */
+.page-sentence {
+  background-color: #FFEDED;
+  padding: 40px;
+  border-radius: 15px;
+  text-align: center;
+  position: relative;
+  overflow: hidden; /* Add this to contain the particles */
+}
+
+.page-sentence::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(circle, #5e2222 10%, transparent 10%);
+  background-size: 20px 20px;
+  background-position: 0 0;
+  animation: particles 10s linear infinite;
+  mask-image: radial-gradient(circle, transparent 50%, black 70%);
+}
+
+@keyframes particles {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100px 100px;
+    transform: rotate(360deg);
+  }
+}
+
+.page-sentence h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.page-sentence h1 .highlight {
+  color: #5e2222;
+}
+
+.page-sentence p {
+  font-size: 1.25rem;
+  color: #666;
+  margin-top: 10px;
+}
+
+.page-sentence .button-container {
+  margin-top: 20px;
+}
+
+.page-sentence .button-container button {
+  background-color: #5e2222;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}

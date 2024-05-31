@@ -17,46 +17,44 @@ import Footer from 'components/organisms/Footer'
 const Home = () => {
   return (
     <>
-      <PageTemplate title="Home - ICP HUB KE">
+        <PageTemplate title="Home - ICP HUB KE">
         {/* Banner Section */}
         <section
           className="flex flex-col gap-10 items-center"
-          data-aos="fade-up"
+          data-aos=""
         >
-          <div className="w-10/12 md:w-8/12 text-center">
-            <PageSentence
-              title="Ushering A New Era Of Decentralized Applications."
-              description="At the forefront of technology is ICP.Hub Kenya dedicated to advancing the Internet Computer ecosystem."
-              badge=""
-            />
+          <div className="w-10/12 md:w-8/12 text-center page-sentence">
+            <h1>
+              Ushering <span className="highlight">A New Era</span> Of Decentralized Applications.
+            </h1>
+            <p>
+              At the forefront of technology is ICP.Hub Kenya dedicated to advancing the Internet Computer ecosystem.
+            </p>
+            <div className="button-container">
+              <ButtonLink
+                value="Explore"
+                href="https://internetcomputer.org/"
+              />
+            </div>
           </div>
-          <div className="flex flex-col gap-6 sm:flex-row w-full sm:w-fit">
-            <ButtonLink value="Explore" href="/quote" />
-            <ButtonLink
-              value="Learn More"
-              color="white"
-              style="light"
-              href="/about"
-            />
-          </div>
-        </section>
+        </section> 
         {/* Feature List */}
         <section className="grid grid-cols-1 gap-5 md:grid-cols-3 mb-16">
-          <div data-aos="fade-up">
+          <div data-aos="">
             <FeatureCard
               title="Apply For Grants"
               description="We believe in nurturing innovation and empowering visionaries. Our grant services are designed to provide the financial support and resources needed to turn your groundbreaking ideas into reality."
               icon={<FiFigma />}
             />
           </div>
-          <div data-aos="fade-up">
+          <div data-aos="">
             <FeatureCard
               title="Education"
               description="Our educational programs are designed to empower individuals and organizations with the skills and expertise needed to navigate the the blockchain and Internet Computer ecosystem."
               icon={<FiCode />}
             />
           </div>
-          <div data-aos="fade-up">
+          <div data-aos="">
             <FeatureCard
               title="Innovation Incubator"
               description="Our Incubator Program is at the heart of our mission to inspire creativity and drive progress within the blockchain and Internet Computer community."
@@ -68,7 +66,7 @@ const Home = () => {
         {/* <LogoList /> */}
         {/* How We Work */}
         <section className="grid grid-cols-1 gap-6 sm:gap-8 place-items-center lg:grid-cols-2">
-        <aside className="w-full h-[400px] relative" data-aos="fade-right">
+        <aside className="w-full h-[400px] relative" data-aos="">
           {/* Replace the Image component with an iframe for YouTube video */}
           <iframe
             className="w-full h-full absolute inset-0 sm:aspect-w-16 sm:aspect-h-9"
@@ -80,7 +78,7 @@ const Home = () => {
         </aside>
   <aside
     className="text-center sm:w-10/12 lg:text-left lg:w-full"
-    data-aos="fade-left"
+    data-aos=""
   >
     <SectionSentence
       title="What is the
@@ -94,7 +92,7 @@ const Home = () => {
         {/* Our Teams */}
         <section className="grid grid-cols-1 gap-6 sm:gap-8 place-items-center lg:grid-cols-2">
           <aside className="text-center sm:w-10/12 lg:text-left lg:w-full">
-            <div className="space-y-12" data-aos="fade-right">
+            <div className="space-y-12" data-aos="">
               <SectionSentence
                 title="We are a team of Developers,Project Managers,Community Managers,Designers,Technical Writers and Social Media Managers"
                 paragraph="Our team is driven by a shared commitment to empowering individuals and businesses with the transformative potential of this groundbreaking technology. Through innovation, education, and community engagement, we strive to pave the way for a more inclusive and decentralized digital future."
@@ -111,7 +109,7 @@ const Home = () => {
           </aside>
           <aside
             className="w-full h-[400px] relative sm:w-8/12 lg:w-full"
-            data-aos="fade-left"
+            data-aos=""
           >
             <Image
               src={'/images/team-illustration.svg'}
@@ -138,7 +136,7 @@ const Home = () => {
             />
           </div>
           <div className="w-full grid grid-cols-1 gap-10 sm:grid-cols-2 sm:gap-5">
-            <div data-aos="flip-left">
+            <div data-aos="">
               <ProjectCard
                 lightTitle="Dev friendliness"
                 lightDescription="Developers can write contracts using popular languages like Rust, TypeScript, or Python and easily incorporate libraries from their respective ecosystem, much like they would in traditional web development."
@@ -146,7 +144,7 @@ const Home = () => {
                 imageAlt="ICP Developer languages"
               />
             </div>
-            <div data-aos="flip-right">
+            <div data-aos="">
               <ProjectCard
                 lightTitle="Interoperability"
                 lightDescription="ICP can interface with other smart contract blockchains and traditional (Web 2) internet resources via HTTP requests and signing capabilities. Chain-Key Cryptography has made this possible."
@@ -156,7 +154,7 @@ const Home = () => {
             </div>
           </div>
           <div className="w-full grid grid-cols-1 gap-10 sm:grid-cols-2 sm:gap-5">
-            <div data-aos="flip-left">
+            <div data-aos="">
               <ProjectCard
                 lightTitle="Everything On-Chain"
                 lightDescription="ICP allows developers to host their applications fully on-chain (i.e frontend and smart contract), big thanks to the web-serving capability of canister smart contracts on ICP and their ability to host large amounts of data. DeFi platforms can exist 100% onchain with no dependency on centralized components."
@@ -164,7 +162,7 @@ const Home = () => {
                 imageAlt="Host everything on chain using ICP"
               />
             </div>
-            <div data-aos="flip-right">
+            <div data-aos="">
               <ProjectCard
                 lightTitle="Very very cheap!"
                 lightDescription="The cost of storing data on-chain with ICP is just $5 USD per GB per year. This is significantly lower as compared to other chains such as Ethereum and Solana"
@@ -175,7 +173,7 @@ const Home = () => {
           </div>
         </section>
 
-        <div data-aos="fade-right">
+        <div data-aos="">
           <CallOut />
         </div>
         

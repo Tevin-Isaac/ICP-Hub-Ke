@@ -12,7 +12,7 @@ const About = () => {
   return (
     <PageTemplate title="About - ICP Hub Kenya">
       <section className="grid grid-cols-1 lg:grid-cols-2 gap-8 place-items-center">
-        <aside className="w-full" data-aos="fade-down-right">
+        <aside className="w-full" data-aos="">
           <div className="w-full h-[480px] relative">
             <Image
               src={'/images/about-illustration.webp'}
@@ -26,7 +26,7 @@ const About = () => {
         </aside>
         <aside
           className="text-center sm:w-10/12 md:w-8/12 lg:w-full lg:text-left"
-          data-aos="fade-up-left"
+          data-aos=""
         >
           <PageSentence
             badge="ABOUT"
@@ -41,7 +41,7 @@ const About = () => {
       <section className="grid place-items-center gap-16">
         <div
           className="sm:w-10/12 md:w-8/12 lg:w-6/12 2xl:w-5/12 text-center"
-          data-aos="zoom-in-up"
+          data-aos=""
         >
           <SectionSentence
             badge="STATISTICS"
@@ -49,7 +49,7 @@ const About = () => {
           />
         </div>
         <div className="w-full grid gap-14">
-          <div data-aos="fade-right">
+          <div data-aos="">
             <StatisticList />
           </div>
           <LogoList />
@@ -58,7 +58,7 @@ const About = () => {
       <section className="grid place-items-center gap-6">
         <div
           className="sm:w-10/12 md:w-8/12 lg:w-6/12 2xl:w-5/12 text-center"
-          data-aos="zoom-in-up"
+          data-aos=""
         >
           <SectionSentence
             badge="OUR TEAM"
@@ -66,63 +66,63 @@ const About = () => {
           />
         </div>
         <div className="w-full grid gap-5 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-          <div data-aos="fade-up">
+          <div data-aos="">
             <TeamCard
               imageSrc="/images/yvonne.png"
               job="Co-Founder"
               name="Yvonne Kagondu"
             />
           </div>
-          <div data-aos="fade-up">
+          <div data-aos="">
             <TeamCard
               imageSrc="/images/tevin.png"
               job="Developer Relations"
               name="Tevin Isaac"
             />
           </div>
-          <div data-aos="fade-up">
+          <div data-aos="">
             <TeamCard
               imageSrc="/images/Mary.png"
               job="Project Manager"
               name="Mary Usaji"
             />
           </div>
-          <div data-aos="fade-up">
+          <div data-aos="">
             <TeamCard
               imageSrc="/images/steve.png"
               job="Project Manager"
               name="Steve Kimoi"
             />
           </div>
-          <div data-aos="fade-up">
+          <div data-aos="">
             <TeamCard
               imageSrc="/images/bella.png"
               job="Community Manager"
               name="Bellah Chris"
             />
           </div>
-          <div data-aos="fade-up">
+          <div data-aos="">
             <TeamCard
               imageSrc="/images/sammy.png"
               job="Sammy Flash"
               name="Lead Designer"
             />
           </div>
-          <div data-aos="fade-up">
+          <div data-aos="">
             <TeamCard
               imageSrc="/images/maic.png"
               job="Maïc Sebakara"
               name="ICP Rwanda Spoke"
             />
           </div>
-          <div data-aos="fade-up">
+          <div data-aos="">
             <TeamCard
               imageSrc="/images/orlah.png"
               job="Peace Adekoya"
               name="Social Media Manager"
             />
           </div>
-          <div data-aos="fade-up">
+          <div data-aos="">
             <TeamCard
               imageSrc="/images/charles.png"
               job="Charles Maina"
