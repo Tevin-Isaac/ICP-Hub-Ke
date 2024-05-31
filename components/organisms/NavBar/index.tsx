@@ -83,7 +83,7 @@ const NavBar = () => {
                 <NavLink href="/about" value="About" canActive={true} />
               </div>
               <div className={`${isOpen ? '' : 'hidden '} lg:block mt-5 lg:mt-0`}>
-                <ButtonLink value="Contact" style="light" color="white" size="small" href="/contact" />
+                <ButtonLink value="Contact" style="outline" color="#F0BC39" size="small" href="/contact" />
               </div>
             </div>
           </div>

@@ -13,7 +13,7 @@ const About = () => {
     <PageTemplate title="About - ICP Hub Kenya">
       <section className="grid grid-cols-1 lg:grid-cols-2 gap-8 place-items-center">
         <aside className="w-full" data-aos="">
-          <div className="w-full h-[480px] relative">
+          <div className="w-full h-[560px] relative">
             <Image
               src={'/images/about-illustration.webp'}
               layout="fill"
@@ -65,7 +65,7 @@ const About = () => {
             title="Meet the team! All the Credit goes to these Hardworking people"
           />
         </div>
-        <div className="w-full grid gap-5 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="w-full grid gap-2 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
           <div data-aos="">
             <TeamCard
               imageSrc="/images/yvonne.png"
