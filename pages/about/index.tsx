@@ -2,11 +2,12 @@ import LineDivider from 'components/atoms/LineDivider'
 import TeamCard from 'components/molecules/Card/TeamCard'
 import PageSentence from 'components/molecules/PageSentence'
 import SectionSentence from 'components/molecules/SectionSentence'
-import LogoList from 'components/organisms/LogoList'
+
 import StatisticList from 'components/organisms/StatisticList'
 import PageTemplate from 'components/templates/PageTemplate'
 import Image from 'next/image'
 import React from 'react'
+import Footer from 'components/organisms/Footer'
 
 const About = () => {
   return (
@@ -52,7 +53,7 @@ const About = () => {
           <div data-aos="">
             <StatisticList />
           </div>
-          <LogoList />
+       
         </div>
       </section>
       <section className="grid place-items-center gap-6">
@@ -131,6 +132,7 @@ const About = () => {
           </div>
         </div>
       </section>
+      <Footer /> 
     </PageTemplate>
   )
 }

@@ -6,6 +6,7 @@ import PageSentence from 'components/molecules/PageSentence'
 import PageTemplate from 'components/templates/PageTemplate'
 import React from 'react'
 import { FiInstagram, FiLinkedin, FiMail, FiPhoneCall, FiTwitter } from 'react-icons/fi'
+import Footer from 'components/organisms/Footer'
 
 const Contact = () => {
   return (
@@ -55,6 +56,7 @@ const Contact = () => {
             </div>
           </aside>
         </section>
+        <Footer /> 
       </PageTemplate>
     </>
   )

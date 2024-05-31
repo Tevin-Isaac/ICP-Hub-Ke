@@ -5,6 +5,7 @@ import SectionSentence from 'components/molecules/SectionSentence'
 import PageTemplate from 'components/templates/PageTemplate'
 import Image from 'next/image'
 import React from 'react'
+import Footer from 'components/organisms/Footer'
 
 const Events = () => {
   return (
@@ -166,9 +167,10 @@ const Events = () => {
           <Button value='Load More' color='white' style='light' />
         </div>
       </section>
-
+      <Footer /> 
       <LineDivider />
     </PageTemplate>
+    
   )
 }
 
