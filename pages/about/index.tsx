@@ -12,9 +12,9 @@ import Footer from 'components/organisms/Footer'
 const About = () => {
   return (
     <PageTemplate title="About - ICP Hub Kenya">
-      <section className="grid grid-cols-1 lg:grid-cols-2 gap-8 place-items-center py-8">
+      <section className="grid grid-cols-1 lg:grid-cols-2 gap-8 place-items-center py-4">
         <aside className="w-full" data-aos="">
-          <div className="w-full h-[560px] relative">
+          <div className="w-full h-[600px] relative">
             <Image
               src={'/images/tuk.jpg'}
               layout="fill"
@@ -37,7 +37,7 @@ const About = () => {
         </aside>
       </section>
 
-      <section className="grid grid-cols-1 lg:grid-cols-2 gap-8 place-items-center py-8">
+      <section className="grid grid-cols-1 lg:grid-cols-2 gap-8 place-items-center py-4">
         <aside
           className="text-center sm:w-10/12 md:w-8/12 lg:w-full lg:text-left"
           data-aos=""
@@ -50,7 +50,7 @@ const About = () => {
           />
         </aside>
         <aside className="w-full" data-aos="">
-          <div className="w-full h-[560px] relative">
+          <div className="w-full h-[600px] relative">
             <Image
               src={"/images/kca.png"}
               layout="fill"
@@ -62,7 +62,7 @@ const About = () => {
         </aside>
       </section>
 
-      <LineDivider />
+
 
       <section className="grid place-items-center gap-16 py-8">
         <div
@@ -157,7 +157,7 @@ const About = () => {
           </div>
         </div>
         <div className="flex justify-center">
-          <a href="https://t.me/your_telegram_group_link" target="_blank" rel="noopener noreferrer">
+          <a href="https://t.me/icphub_KE" target="_blank" rel="noopener noreferrer">
             <button className="bg-[#F0BC39] hover:bg-[#d9a633] text-white font-bold py-2 px-4 rounded">
               Join Our Telegram Group
             </button>

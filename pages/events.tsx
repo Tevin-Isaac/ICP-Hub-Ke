@@ -11,19 +11,7 @@ const Events = () => {
   return (
     <PageTemplate>
 
-      <section className="grid place-items-center">
-        <div className="sm:w-10/12 md:w-8/12 lg:w-6/12 2xl:w-5/12 text-center" data-aos="">
-          <PageSentence
-            badge="UPCOMING EVENTS"
-            title="Here are some of our upcoming events"
-            description="You can scroll down to check some of the events we've had in the past"
-          />
-        </div>
-      </section>
-
-      <LineDivider />
-
-      <section className="grid grid-cols-1 lg:grid-cols-2 place-items-center gap-8 lg:gap-5">
+      <section className="grid grid-cols-1 lg:grid-cols-2 place-items-center gap-4">
         <aside className="w-full" data-aos="">
           <div className="w-full h-[410px] relative">
             <div>
@@ -48,7 +36,7 @@ const Events = () => {
         </aside>
       </section>
 
-      <section className="grid grid-cols-1 lg:grid-cols-2 place-items-center gap-8 lg:gap-5">
+      <section className="grid grid-cols-1 lg:grid-cols-2 place-items-center gap-4">
         <aside className="sm:w-10/12 md:w-8/12 lg:w-full text-center lg:text-left" data-aos="">
           <SectionSentence
             badge="Hackathon"
@@ -72,23 +60,7 @@ const Events = () => {
           </div>
         </aside>
       </section>
-
-      <LineDivider />
-
-
-
-      <section className="grid place-items-center">
-        <div className="sm:w-10/12 md:w-8/12 lg:w-6/12 2xl:w-5/12 text-center" data-aos="">
-          <PageSentence
-            badge="PAST EVENTS"
-            title="Here are some of the events we've done"
-          />
-        </div>
-      </section>
-
-      <LineDivider />
-
-      <section className="grid grid-cols-1 lg:grid-cols-2 place-items-center gap-8 lg:gap-5">
+      <section className="grid grid-cols-1 lg:grid-cols-2 place-items-center gap-4">
         <aside className="w-full" data-aos="">
           <div className="w-full h-[410px] relative">
             <div>
@@ -100,15 +72,6 @@ const Events = () => {
                 alt='ICP ETH Safari image'
               />
             </div>
-            {/* <div>
-              <Image
-                src={'/images/ETHSafari2.jpg'}
-                quality={100}
-                layout="fill"
-                objectFit="contain"
-                alt='ICP ETH Safari image'
-              />
-            </div> */}
           </div>
         </aside>
         <aside className="sm:w-10/12 md:w-8/12 lg:w-full text-center lg:text-left" data-aos="">
@@ -120,7 +83,7 @@ const Events = () => {
         </aside>
       </section>
 
-      <section className="grid grid-cols-1 lg:grid-cols-2 place-items-center gap-8 lg:gap-5">
+      <section className="grid grid-cols-1 lg:grid-cols-2 place-items-center gap-4">
         <aside className="sm:w-10/12 md:w-8/12 lg:w-full text-center lg:text-left" data-aos="">
           <SectionSentence
             badge="Hackathon"
@@ -141,7 +104,7 @@ const Events = () => {
         </aside>
       </section>
 
-      <section className="grid grid-cols-1 lg:grid-cols-2 place-items-center gap-8 lg:gap-5">
+      <section className="grid grid-cols-1 lg:grid-cols-2 place-items-center gap-4">
         <aside className="w-full" data-aos="">
           <div className="w-full h-[410px] relative">
             <Image
@@ -153,6 +116,7 @@ const Events = () => {
             />
           </div>
         </aside>
+        
         <aside className="sm:w-10/12 md:w-8/12 lg:w-full text-center lg:text-left" data-aos="">
           <SectionSentence
             badge="Hackathon"
@@ -162,13 +126,9 @@ const Events = () => {
         </aside>
       </section>
 
-      <section className='grid place-items-center'>
-        <div className="">
-          <Button value='Load More' color='white' style='light' />
-        </div>
-      </section>
+
       <Footer /> 
-      <LineDivider />
+  
     </PageTemplate>
     
   )

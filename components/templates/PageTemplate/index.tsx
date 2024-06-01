@@ -38,7 +38,7 @@ const PageTemplate = ({
                 {/* Padding */}
                 <Container>
                   {children}
-                  <div data-aos="fade-right">
+                  <div data-aos="">
                     <CallOut />
                   </div>
                   <Footer />

@@ -40,11 +40,12 @@
 /* Add this CSS code to create a particle animation inside the white background */
 .page-sentence {
   background-color: #FFEDED;
-  padding: 40px;
+  padding: 60px 40px; /* Increased padding for a larger look */
   border-radius: 15px;
   text-align: center;
   position: relative;
-  overflow: hidden; /* Add this to contain the particles */
+  overflow: hidden; /* Contain the particles */
+  max-width: 100%; /* Ensure it can take up full width */
 }
 
 .page-sentence::before {
@@ -72,7 +73,7 @@
 }
 
 .page-sentence h1 {
-  font-size: 2rem;
+  font-size: 2.5rem; /* Increased font size for hero section */
   font-weight: bold;
   color: #333;
 }
@@ -82,21 +83,31 @@
 }
 
 .page-sentence p {
-  font-size: 1.25rem;
+  font-size: 1.5rem; /* Increased font size for better readability */
   color: #666;
   margin-top: 10px;
 }
 
 .page-sentence .button-container {
-  margin-top: 20px;
+  margin-top: 30px; /* Increased margin for better spacing */
 }
 
 .page-sentence .button-container button {
   background-color: #5e2222;
   color: white;
-  padding: 10px 20px;
+  padding: 15px 30px; /* Increased padding for a larger button */
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 1.25rem; /* Increased font size for the button text */
+}
+
+/* Additional CSS for the section */
+/* No changes needed, the provided CSS styles are for positioning and layout */
+.hero-section {
+  width: 116vw; /* Make the section as wide as the viewport */
+
+  padding: 20px 10px 10px 0; /* Adjust padding for top, right, bottom, and left space */
+  display: flex;
+  margin: 0 0 0 auto; /* Move the section slightly to the right */
 }

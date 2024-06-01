@@ -33,7 +33,7 @@ const Blog = () => {
           </Link>
         </div>
       </section>
-      <LineDivider />
+  
       <section className="grid place-items-center gap-16">
         <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-10 sm:gap-x-5"></div>
       </section>
