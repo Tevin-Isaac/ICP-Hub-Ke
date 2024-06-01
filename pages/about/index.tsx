@@ -29,8 +29,8 @@ const About = () => {
           data-aos=""
         >
           <PageSentence
-            badge="OUR MISSION"
-            title="ICP HUB KENYA"
+            badge=" MISSION"
+            title="Our Mission"
             description={`
             Welcome to ICP Hub Kenya, a pioneering force dedicated to advancing blockchain technology across the region and beyond. As one of the  esteemed ICP Hubs worldwide, our mission is clear: to empower individuals and organizations through education, collaboration, and innovation in the realm of blockchain. With a steadfast commitment to fostering a vibrant ecosystem, we strive to catalyze growth, drive adoption, and unlock the transformative potential of blockchain technology for a brighter future. Join us on this journey as we shape the landscape of tomorrow, one block at a time in Africa.`}
           />
@@ -43,8 +43,8 @@ const About = () => {
           data-aos=""
         >
           <PageSentence
-            badge="OUR VISION "
-            title="ICP HUB KENYA"
+            badge=" VISION "
+            title="Our Vision"
             description={`
             We envision a world where blockchain technology empowers individuals and organizations, enabling them to unlock their full potential. The Internet Computer is our chosen vessel for this vision, and we are dedicated to fueling its growth and adoption throughout  Africa`}
           />
@@ -69,15 +69,19 @@ const About = () => {
           className="sm:w-10/12 md:w-8/12 lg:w-6/12 2xl:w-5/12 text-center"
           data-aos=""
         >
-          <SectionSentence
-            badge="STATISTICS"
-            title="In 1 year we have done more than 20 successful Hackathons,Trained more than 1000 Blockchain Developers and Incubated more than 10 major Start Ups"
-          />
+     
         </div>
         <div className="w-full grid gap-14">
           <div data-aos="">
             <StatisticList />
           </div>
+          <div className="flex justify-center">
+          <a href="https://t.me/icphub_KE" target="_blank" rel="noopener noreferrer">
+            <button className="bg-[#F0BC39] hover:bg-[#d9a633] text-white font-bold py-2 px-4 rounded">
+              Join Our Telegram
+            </button>
+          </a>
+        </div>
         </div>
       </section>
 
@@ -156,13 +160,7 @@ const About = () => {
             />
           </div>
         </div>
-        <div className="flex justify-center">
-          <a href="https://t.me/icphub_KE" target="_blank" rel="noopener noreferrer">
-            <button className="bg-[#F0BC39] hover:bg-[#d9a633] text-white font-bold py-2 px-4 rounded">
-              Join Our Telegram Group
-            </button>
-          </a>
-        </div>
+    
       </section>
 
       <Footer />
