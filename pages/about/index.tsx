@@ -4,7 +4,7 @@ import PageSentence from 'components/molecules/PageSentence'
 import SectionSentence from 'components/molecules/SectionSentence'
 import TestimonialList from 'components/organisms/TestimonialList'
 import PricingCard from 'components/molecules/Card/PricingCard'
-
+import IconListItem from 'components/molecules/IconListItem'
 import StatisticList from 'components/organisms/StatisticList'
 import PageTemplate from 'components/templates/PageTemplate'
 import Image from 'next/image'
@@ -76,15 +76,9 @@ const About = () => {
           <div data-aos="">
             <StatisticList />
           </div>
-          <div className="flex justify-center">
-          <a href="https://t.me/icphub_KE" target="_blank" rel="noopener noreferrer">
-            <button className="bg-[#F0BC39] hover:bg-[#d9a633] text-white font-bold py-2 px-4 rounded">
-              Join Our Telegram
-            </button>
-          </a>
+    
         </div>
-        </div>
-      
+    
 
     
         <div
@@ -161,8 +155,30 @@ const About = () => {
             />
           </div>
         </div>
-    
+        <div className="w-full h-[600px] relative">
+            <Image
+              src={'/images/hub.png'}
+              layout="fill"
+              objectFit="contain"
+              quality={80}
+              alt=""
+            />
+          
+          </div>
+        <div className="flex justify-center">
+          <a
+            href="https://t.me/icphub_KE"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="bg-[#F0BC39] hover:bg-[#d9a633] text-white font-bold py-2 px-4 rounded flex items-center">
+        
+              Join Our Telegram
+            </button>
+          </a>
+        </div>
       </section>
+
 
       <Footer />
     </PageTemplate>

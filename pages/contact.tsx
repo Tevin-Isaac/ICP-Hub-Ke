@@ -11,9 +11,12 @@ import Footer from 'components/organisms/Footer'
 const Contact = () => {
   return (
     <>
-      <PageTemplate title='Contact - ICPHUB KE'>
+      <PageTemplate title="Contact - ICPHUB KE">
         <section className="grid grid-cols-1 place-items-center gap-10 lg:gap-5 lg:grid-cols-2">
-          <aside className="w-full sm:w-10/12 md:w-8/12 grid grid-cols-1 gap-12 sm:place-items-center lg:w-full lg:place-items-start" data-aos="">
+          <aside
+            className="w-full sm:w-10/12 md:w-8/12 grid grid-cols-1 gap-12 sm:place-items-center lg:w-full lg:place-items-start"
+            data-aos=""
+          >
             <div className="sm:text-center lg:text-left">
               <PageSentence
                 title="Get in touch with us here ."
@@ -27,15 +30,15 @@ const Contact = () => {
                 "
                 icon={<FiTwitter />}
               />
-               <IconListItem
+              <IconListItem
                 label="Instagram"
                 value="icphub_ke"
                 icon={<FiInstagram />}
               />
-                <IconListItem
+              <IconListItem
                 label="Linked In"
                 value="ICP Hub Kenya"
-                icon={<FiLinkedin/>}
+                icon={<FiLinkedin />}
               />
               <IconListItem
                 label="Email"
@@ -44,7 +47,10 @@ const Contact = () => {
               />
             </div>
           </aside>
-          <aside className="w-full sm:w-10/12 md:w-8/12 lg:w-full lg:flex lg:justify-end" data-aos="">
+          <aside
+            className="w-full sm:w-10/12 md:w-8/12 lg:w-full lg:flex lg:justify-end"
+            data-aos=""
+          >
             <div className="grid grid-cols-1 gap-7 p-6 md:p-9 bg-light rounded-md lg:w-10/12 ">
               <div className="grid grid-cols-2 gap-4">
                 <InputGroup label="Name" />
@@ -56,10 +62,10 @@ const Contact = () => {
             </div>
           </aside>
         </section>
-        <Footer /> 
+        <Footer />
       </PageTemplate>
     </>
-  )
-}
+  );
+};
 
 export default Contact
