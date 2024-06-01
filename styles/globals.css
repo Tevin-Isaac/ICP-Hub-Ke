@@ -131,11 +131,19 @@
 /* } */
 
 .hero-section {
-  width: 116.5vw; /* Make the section as wide as the viewport */
+  width: 90vw; /* Make the section as wide as the viewport */
   padding: 1px 10px 10px 0; /* Adjust padding for top, right, bottom, and left space */
   display: flex;
   overflow: hidden; /* Prevent content from overflowing */
   margin-right: 2rem;
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    width: 100vw;
+    padding: 20px 10px;
+    margin-right: 0;
+  }
 }
 
 

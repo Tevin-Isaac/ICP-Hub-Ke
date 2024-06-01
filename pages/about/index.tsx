@@ -12,8 +12,9 @@ import Footer from 'components/organisms/Footer'
 const About = () => {
   return (
     <PageTemplate title="About - ICP Hub Kenya">
+
       <section className="grid grid-cols-1 lg:grid-cols-2 gap-8 place-items-center py-4 m-0">
-        <aside className="w-full" data-aos="">
+        <aside className="w-full m-0" data-aos="">
           <div className="w-full h-[600px] relative">
             <Image
               src={'/images/tuk.jpg'}
