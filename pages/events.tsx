@@ -11,6 +11,16 @@ const Events = () => {
   return (
     <PageTemplate>
 
+      <section className="grid place-items-center pt-1">
+        <div className="sm:w-10/12 md:w-8/12 lg:w-6/12 2xl:w-5/12 text-center" data-aos="">
+          <PageSentence
+            badge="UPCOMING EVENTS"
+            title="Here are some of our upcoming events"
+            // description="You can scroll down to check some of the events we've had in the past"
+          />
+        </div>
+      </section>
+
       <section className="grid grid-cols-1 lg:grid-cols-2 place-items-center gap-4">
         <aside className="w-full" data-aos="">
           <div className="w-full h-[410px] relative">
@@ -60,6 +70,18 @@ const Events = () => {
           </div>
         </aside>
       </section>
+
+      <LineDivider />
+
+      <section className="grid place-items-center pt-2">
+        <div className="sm:w-10/12 md:w-8/12 lg:w-6/12 2xl:w-5/12 text-center" data-aos="">
+          <PageSentence
+            badge="PAST EVENTS"
+            title="Here are some of the events we've done"
+          />
+        </div>
+      </section>
+
       <section className="grid grid-cols-1 lg:grid-cols-2 place-items-center gap-4">
         <aside className="w-full" data-aos="">
           <div className="w-full h-[410px] relative">
