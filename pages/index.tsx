@@ -125,9 +125,9 @@ const Home = () => {
 
       {/* Section with light background */}
       <PageTemplate title="ICP Features" light>
-        <section data-light-section className="flex flex-col gap-16 items-center">
+        <section data-light-section className="flex flex-col gap-16 items-center mt-0">
           <div
-            className="text-center sm:w-10/12 md:w-8/12 lg:w-6/12"
+            className="text-center sm:w-10/12 md:w-8/12 lg:w-6/12 mt-0"
             data-aos=""
           >
             <SectionSentence
@@ -135,7 +135,7 @@ const Home = () => {
               lightBadge="WHAT ICP OFFERS TODAY"
             />
           </div>
-          <div className="w-full grid grid-cols-1 gap-10 sm:grid-cols-2 sm:gap-5">
+          <div className="w-full grid grid-cols-1 gap-10 sm:grid-cols-2 sm:gap-5 mt-0">
             <div data-aos="">
               <ProjectCard
                 lightTitle="Dev friendliness"
@@ -153,7 +153,7 @@ const Home = () => {
               />
             </div>
           </div>
-          <div className="w-full grid grid-cols-1 gap-10 sm:grid-cols-2 sm:gap-5">
+          <div className="w-full grid grid-cols-1 gap-10 sm:grid-cols-2 sm:gap-5 mt-0">
             <div data-aos="">
               <ProjectCard
                 lightTitle="Everything On-Chain"
@@ -176,12 +176,11 @@ const Home = () => {
         <div data-aos="">
           <CallOut />
         </div>
-        
+
       </PageTemplate>
 
-      <PageTemplate>
-        <Footer /> 
-      </PageTemplate> 
+      <Footer /> 
+
 
         {/* Prices */}
         {/* <section className="flex flex-col gap-16 items-center">

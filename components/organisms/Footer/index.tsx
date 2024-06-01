@@ -6,7 +6,7 @@ import React from 'react'
 const Footer = () => {
   return (
     <>
-      <footer className="mt-32 pb-16">
+      <footer className="pb-40 pt-16 bg-[#632020]">
         <div className="flex flex-col gap-8 lg:flex-row lg:gap-16 xl:gap-20">
           <div className="space-y-5">
             <NavBrand />
