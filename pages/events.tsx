@@ -87,7 +87,7 @@ const Events = () => {
           <div className="w-full h-[410px] relative">
             <div>
               <Image
-                src={'/images/ETHSafari1.jpg'}
+                src={'/images/ETHSafari2.jpg'}
                 quality={100}
                 layout="fill"
                 objectFit="contain"
