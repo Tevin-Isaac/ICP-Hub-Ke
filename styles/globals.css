@@ -102,12 +102,46 @@
   font-size: 1.25rem; /* Increased font size for the button text */
 }
 
+@media (max-width: 768px) {
+  .page-sentence {
+    padding: 40px 20px;
+  }
+
+  .page-sentence h1 {
+    font-size: 2rem;
+  }
+
+  .page-sentence p {
+    font-size: 1.2rem;
+  }
+
+  .page-sentence .button-container button {
+    padding: 12px 24px;
+    font-size: 1rem;
+  }
+}
+
 /* Additional CSS for the section */
 /* No changes needed, the provided CSS styles are for positioning and layout */
-.hero-section {
-  width: 116vw; /* Make the section as wide as the viewport */
+/* .hero-section { */
+  /* width: 116vw; Make the section as wide as the viewport */
+  /* padding: 20px 10px 10px 0; Adjust padding for top, right, bottom, and left space */
+  /* display: flex; */
+  /* margin: 0 0 0 auto; Move the section slightly to the right */
+/* } */
 
+.hero-section {
+  width: 90vw; /* Make the section as wide as the viewport */
   padding: 20px 10px 10px 0; /* Adjust padding for top, right, bottom, and left space */
   display: flex;
-  margin: 0 0 0 auto; /* Move the section slightly to the right */
+  overflow: hidden; /* Prevent content from overflowing */
+  margin-right: 2rem;
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    width: 100vw;
+    padding: 20px 10px;
+    margin-right: 0;
+  }
 }

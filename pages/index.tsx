@@ -31,10 +31,13 @@ const Home = () => {
             <p>
               At the forefront of technology is ICP.Hub Kenya dedicated to advancing the Internet Computer ecosystem.
             </p>
+            
             <div className="button-container">
-              <Link href="/about" >
-                <ButtonLink value="Explore" href="/about" />
-                
+              <Link href="/about" passHref>
+                <ButtonLink 
+                 value="Explore" 
+                 href="/about"  
+                />
               </Link>
             </div>
            

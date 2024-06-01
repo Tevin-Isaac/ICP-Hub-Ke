@@ -1,5 +1,4 @@
 import Button, { ButtonProps } from 'components/atoms/Button'
-import Link from 'next/link'
 import React from 'react'
 
 interface ButtonLinkProps extends ButtonProps {
@@ -12,20 +11,20 @@ const ButtonLink = ({
   onClick = () => {},
   size = 'normal',
   style = 'solid',
-  color = 'primary', 
+  color = 'primary',
   radius = 'rounded',
 }: ButtonLinkProps) => {
   return (
-    <Link href={href} passHref>
-        <Button
-          value={value}
-          color={color}
-          onClick={onClick}
-          radius={radius}
-          size={size}
-          style={style}
-        />
-    </Link>
+    <a href={href}>
+      <Button
+        value={value}
+        color={color}
+        onClick={onClick}
+        radius={radius}
+        size={size}
+        style={style}
+      />
+    </a>
   )
 }
 
