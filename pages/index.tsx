@@ -13,29 +13,31 @@ import React from 'react'
 import { FiFigma, FiCode, FiBox } from 'react-icons/fi'
 import CallOut from 'components/organisms/CallOut'
 import Footer from 'components/organisms/Footer'
+import Link from 'next/link'
 
 const Home = () => {
   return (
     <>
         <PageTemplate title="Home - ICP HUB KE">
         {/* Banner Section */}
-        <section
-          className="flex flex-col gap-10 items-center"
-          data-aos=""
-        >
+        <section className="hero-section" data-aos="">
+          
+        
           <div className="w-10/12 md:w-8/12 text-center page-sentence">
             <h1>
               Ushering <span className="highlight">A New Era</span> Of Decentralized Applications.
             </h1>
+
             <p>
               At the forefront of technology is ICP.Hub Kenya dedicated to advancing the Internet Computer ecosystem.
             </p>
             <div className="button-container">
-              <ButtonLink
-                value="Explore"
-                href="https://internetcomputer.org/"
-              />
+              <Link href="/about" >
+                <ButtonLink value="Explore" href="/about" />
+                
+              </Link>
             </div>
+           
           </div>
         </section> 
         {/* Feature List */}
@@ -66,13 +68,13 @@ const Home = () => {
         {/* <LogoList /> */}
         {/* How We Work */}
         <section className="grid grid-cols-1 gap-6 sm:gap-8 place-items-center lg:grid-cols-2">
-        <aside className="w-full h-[400px] relative" data-aos="">
+        <aside className="w-full h-[287px] relative" data-aos="">
           {/* Replace the Image component with an iframe for YouTube video */}
           <iframe
             className="w-full h-full absolute inset-0 sm:aspect-w-16 sm:aspect-h-9"
             src="https://www.youtube.com/embed/mqLoCgpDotI"
             title="Video"
-            frameBorder="0"
+            frameBorder="1"
             allowFullScreen
           ></iframe>
         </aside>
@@ -98,13 +100,15 @@ const Home = () => {
                 paragraph="Our team is driven by a shared commitment to empowering individuals and businesses with the transformative potential of this groundbreaking technology. Through innovation, education, and community engagement, we strive to pave the way for a more inclusive and decentralized digital future."
                 badge="OUR TEAM"
               />
-              <ButtonLink
-                value="See Our Team"
-                href="/about"
-                size="small"
-                color="white"
-                style="light"
-              />
+              <Link href="/about" passHref>
+                <ButtonLink
+                  value="See Our Team"
+                  size="small"
+                  color="white"
+                  style="light"
+                  href="/about"
+                />
+              </Link>
             </div>
           </aside>
           <aside

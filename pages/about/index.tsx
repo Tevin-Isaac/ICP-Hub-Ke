@@ -12,16 +12,15 @@ import Footer from 'components/organisms/Footer'
 const About = () => {
   return (
     <PageTemplate title="About - ICP Hub Kenya">
-      <section className="grid grid-cols-1 lg:grid-cols-2 gap-8 place-items-center">
+      <section className="grid grid-cols-1 lg:grid-cols-2 gap-8 place-items-center py-4">
         <aside className="w-full" data-aos="">
-          <div className="w-full h-[560px] relative">
+          <div className="w-full h-[600px] relative">
             <Image
-              src={'/images/about-illustration.webp'}
+              src={'/images/tuk.jpg'}
               layout="fill"
               objectFit="contain"
               quality={80}
               alt="Programmers when coding in their laptop"
-              
             />
           </div>
         </aside>
@@ -30,16 +29,42 @@ const About = () => {
           data-aos=""
         >
           <PageSentence
-            badge="ABOUT"
+            badge="OUR MISSION"
             title="ICP HUB KENYA"
             description={`
-
             Welcome to ICP Hub Kenya, a pioneering force dedicated to advancing blockchain technology across the region and beyond. As one of the  esteemed ICP Hubs worldwide, our mission is clear: to empower individuals and organizations through education, collaboration, and innovation in the realm of blockchain. With a steadfast commitment to fostering a vibrant ecosystem, we strive to catalyze growth, drive adoption, and unlock the transformative potential of blockchain technology for a brighter future. Join us on this journey as we shape the landscape of tomorrow, one block at a time in Africa.`}
           />
         </aside>
       </section>
-      <LineDivider />
-      <section className="grid place-items-center gap-16">
+
+      <section className="grid grid-cols-1 lg:grid-cols-2 gap-8 place-items-center py-4">
+        <aside
+          className="text-center sm:w-10/12 md:w-8/12 lg:w-full lg:text-left"
+          data-aos=""
+        >
+          <PageSentence
+            badge="OUR VISION "
+            title="ICP HUB KENYA"
+            description={`
+            We envision a world where blockchain technology empowers individuals and organizations, enabling them to unlock their full potential. The Internet Computer is our chosen vessel for this vision, and we are dedicated to fueling its growth and adoption throughout  Africa`}
+          />
+        </aside>
+        <aside className="w-full" data-aos="">
+          <div className="w-full h-[600px] relative">
+            <Image
+              src={"/images/kca.png"}
+              layout="fill"
+              objectFit="contain"
+              quality={80}
+              alt="Programmers when coding in their laptop"
+            />
+          </div>
+        </aside>
+      </section>
+
+
+
+      <section className="grid place-items-center gap-16 py-8">
         <div
           className="sm:w-10/12 md:w-8/12 lg:w-6/12 2xl:w-5/12 text-center"
           data-aos=""
@@ -53,10 +78,10 @@ const About = () => {
           <div data-aos="">
             <StatisticList />
           </div>
-       
         </div>
       </section>
-      <section className="grid place-items-center gap-6">
+
+      <section className="grid place-items-center gap-6 py-8">
         <div
           className="sm:w-10/12 md:w-8/12 lg:w-6/12 2xl:w-5/12 text-center"
           data-aos=""
@@ -131,8 +156,16 @@ const About = () => {
             />
           </div>
         </div>
+        <div className="flex justify-center">
+          <a href="https://t.me/icphub_KE" target="_blank" rel="noopener noreferrer">
+            <button className="bg-[#F0BC39] hover:bg-[#d9a633] text-white font-bold py-2 px-4 rounded">
+              Join Our Telegram Group
+            </button>
+          </a>
+        </div>
       </section>
-      <Footer /> 
+
+      <Footer />
     </PageTemplate>
   )
 }
