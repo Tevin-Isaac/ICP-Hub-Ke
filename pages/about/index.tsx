@@ -2,6 +2,8 @@ import LineDivider from 'components/atoms/LineDivider'
 import TeamCard from 'components/molecules/Card/TeamCard'
 import PageSentence from 'components/molecules/PageSentence'
 import SectionSentence from 'components/molecules/SectionSentence'
+import TestimonialList from 'components/organisms/TestimonialList'
+import PricingCard from 'components/molecules/Card/PricingCard'
 
 import StatisticList from 'components/organisms/StatisticList'
 import PageTemplate from 'components/templates/PageTemplate'
@@ -21,7 +23,7 @@ const About = () => {
               layout="fill"
               objectFit="contain"
               quality={80}
-              alt="Programmers when coding in their laptop"
+              alt=""
             />
           </div>
         </aside>
@@ -36,9 +38,7 @@ const About = () => {
             Welcome to ICP Hub Kenya, a pioneering force dedicated to advancing blockchain technology across the region and beyond. As one of the  esteemed ICP Hubs worldwide, our mission is clear: to empower individuals and organizations through education, collaboration, and innovation in the realm of blockchain. With a steadfast commitment to fostering a vibrant ecosystem, we strive to catalyze growth, drive adoption, and unlock the transformative potential of blockchain technology for a brighter future. Join us on this journey as we shape the landscape of tomorrow, one block at a time in Africa.`}
           />
         </aside>
-      </section>
 
-      <section className="grid grid-cols-1 lg:grid-cols-2 gap-8 place-items-center py-4 m-0">
         <aside
           className="text-center sm:w-10/12 md:w-8/12 lg:w-full lg:text-left"
           data-aos=""
@@ -57,7 +57,7 @@ const About = () => {
               layout="fill"
               objectFit="contain"
               quality={80}
-              alt="Programmers when coding in their laptop"
+              alt=""
             />
           </div>
         </aside>
@@ -65,7 +65,7 @@ const About = () => {
 
 
 
-      <section className="grid place-items-center gap-16 py-8 m-0">
+      <section className="grid place-items-center gap-8 py-8 m-0">
         <div
           className="sm:w-10/12 md:w-8/12 lg:w-6/12 2xl:w-5/12 text-center"
           data-aos=""
@@ -84,9 +84,9 @@ const About = () => {
           </a>
         </div>
         </div>
-      </section>
+      
 
-      <section className="grid place-items-center gap-6 py-8">
+    
         <div
           className="sm:w-10/12 md:w-8/12 lg:w-6/12 2xl:w-5/12 text-center"
           data-aos=""

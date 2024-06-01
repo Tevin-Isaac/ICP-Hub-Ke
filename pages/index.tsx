@@ -189,68 +189,7 @@ const Home = () => {
       <Footer /> 
 
 
-        {/* Prices */}
-        {/* <section className="flex flex-col gap-16 items-center">
-          <div
-            className="text-center sm:w-10/12 md:w-8/12 lg:w-6/12"
-            data-aos="zoom-in-up"
-          >
-            <SectionSentence
-              title="What are the key design choices ICP makes to achieve these capabilities?"
-              badge="ICP IS THE FUTURE"
-            />
-          </div>
-          <div className="w-full grid grid-cols-1 gap-10 sm:grid-cols-2 sm:gap-5 lg:grid-cols-3">
-            <div data-aos="fade-up-right">
-              <PricingCard
-                price="1200$"
-                title="UI Design"
-                features={[
-                  '10 design pages',
-                  'Well-documented',
-                  '4 revisions',
-                  '$100/additional page',
-                ]}
-              />
-            </div>
-            <div data-aos="fade-up" data-aos-delay="300">
-              <PricingCard
-                price="5000$"
-                title="Development"
-                features={[
-                  'Web & Mobile',
-                  'Well-documented',
-                  '8 revisions',
-                  '$1000/additional page',
-                ]}
-              />
-            </div>
-            <div data-aos="fade-up-left">
-              <PricingCard
-                price="3000$"
-                title="Maintenance"
-                features={[
-                  'Daily backup',
-                  '3 hours of maintenance',
-                  'Including fixing',
-                  '$50/additional hour',
-                ]}
-              />
-            </div>
-          </div>
-        </section> */}
-        {/* Testimonial */}
-        {/* <section className="flex flex-col gap-16 items-center">
-          <div className="text-center sm:w-10/12 md:w-8/12 lg:w-6/12" data-aos="zoom-in-up">
-            <SectionSentence
-              title="What do some of our Sponsored partners say ?"
-              badge="TESTIMONIAL"
-            />
-          </div>
-          <div className="w-full" data-aos="fade-up">
-            <TestimonialList />
-          </div>
-        </section> */}
+      
     </>
   )
 }
