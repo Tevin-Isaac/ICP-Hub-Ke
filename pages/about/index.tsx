@@ -12,7 +12,7 @@ import Footer from 'components/organisms/Footer'
 const About = () => {
   return (
     <PageTemplate title="About - ICP Hub Kenya">
-      <section className="grid grid-cols-1 lg:grid-cols-2 gap-8 place-items-center py-4">
+      <section className="grid grid-cols-1 lg:grid-cols-2 gap-8 place-items-center py-4 m-0">
         <aside className="w-full" data-aos="">
           <div className="w-full h-[600px] relative">
             <Image
@@ -37,7 +37,7 @@ const About = () => {
         </aside>
       </section>
 
-      <section className="grid grid-cols-1 lg:grid-cols-2 gap-8 place-items-center py-4">
+      <section className="grid grid-cols-1 lg:grid-cols-2 gap-8 place-items-center py-4 m-0">
         <aside
           className="text-center sm:w-10/12 md:w-8/12 lg:w-full lg:text-left"
           data-aos=""
@@ -64,7 +64,7 @@ const About = () => {
 
 
 
-      <section className="grid place-items-center gap-16 py-8">
+      <section className="grid place-items-center gap-16 py-8 m-0">
         <div
           className="sm:w-10/12 md:w-8/12 lg:w-6/12 2xl:w-5/12 text-center"
           data-aos=""

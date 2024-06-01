@@ -95,7 +95,7 @@ const Home = () => {
 </section>
 
         {/* Our Teams */}
-        <section className="grid grid-cols-1 gap-6 sm:gap-8 place-items-center lg:grid-cols-2">
+        <section className="grid grid-cols-1 gap-6 sm:gap-8 place-items-center lg:grid-cols-2 px-4 sm:px-8 md:px-12 lg:px-0">
           <aside className="text-center sm:w-10/12 lg:text-left lg:w-full">
             <div className="space-y-12" data-aos="">
               <SectionSentence
@@ -115,7 +115,7 @@ const Home = () => {
             </div>
           </aside>
           <aside
-            className="w-full h-[400px] relative sm:w-8/12 lg:w-full"
+            className="w-full h-[400px] relative sm:w-8/12 lg:w-full px-4 sm:px-8 md:px-12 lg:px-0"
             data-aos=""
           >
             <Image
@@ -133,16 +133,16 @@ const Home = () => {
       {/* Section with light background */}
       <PageTemplate title="ICP Features" light>
         <section data-light-section className="flex flex-col gap-16 items-center mt-0">
-          <div
-            className="text-center sm:w-10/12 md:w-8/12 lg:w-6/12 mt-0"
+          <div 
+            className="text-center sm:w-10/12 md:w-8/12 lg:w-6/12 mt-0 mb-2 sm:mb-0" 
             data-aos=""
           >
-            <SectionSentence
-              lightTitle="ICP has unique features"
-              lightBadge="WHAT ICP OFFERS TODAY"
+            <SectionSentence 
+              lightTitle="ICP has unique features" 
+              lightBadge="WHAT ICP OFFERS TODAY" 
             />
           </div>
-          <div className="w-full grid grid-cols-1 gap-10 sm:grid-cols-2 sm:gap-5 mt-0">
+          <div className="w-full grid grid-cols-1 gap-10 sm:grid-cols-2 sm:gap-1 mt-2 sm:mt-0">
             <div data-aos="">
               <ProjectCard
                 lightTitle="Dev friendliness"
