@@ -39,7 +39,7 @@ const Footer = () => {
                 value="Dacade course"
                 href="https://dacade.org/communities/icp"
               />
-              <NavLink value="About" href="http://localhost:3000/about" />
+            
             </div>
           </div>
           <div className="space-y-5">
