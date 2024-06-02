@@ -44,7 +44,20 @@ const Home = () => {
           </div>
         </section> 
         {/* Feature List */}
+        <div
+          className="sm:w-10/12 md:w-8/12 lg:w-6/12 2xl:w-5/12 text-center mx-auto"
+          data-aos=""
+        >
+          <PageSentence
+            title="What We Offer"
+          />
+        </div>
+
+
+
+
         <section className="grid grid-cols-1 gap-5 md:grid-cols-3 mb-16">
+  
           <div data-aos="">
             <FeatureCard
               title="Apply For Grants"
@@ -52,13 +65,17 @@ const Home = () => {
               icon={<FiFigma />}
             />
           </div>
-          <div data-aos="">
+          <div
+            data-aos=""
+            style={{ backgroundColor: "#F0BC39" }}
+          >
             <FeatureCard
               title="Education"
               description="Our educational programs are designed to empower individuals and organizations with the skills and expertise needed to navigate the the blockchain and Internet Computer ecosystem."
-              icon={<FiCode />}
+              icon={<FiCode style={{ color: 'white' }} />}
             />
           </div>
+
           <div data-aos="">
             <FeatureCard
               title="Innovation Incubator"

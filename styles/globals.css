@@ -37,7 +37,17 @@
     @apply border-2 border-primary mt-0 !important;
   }
 }
-/* Add this CSS code to create a particle animation inside the white background */
+/* CSS for centering the hero section and its content */
+.hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px 10px;
+  overflow: hidden; /* Prevent content from overflowing */
+  margin: 0 auto; /* Center the section horizontally */
+}
+
 .page-sentence {
   background-color: #FFEDED;
   padding: 60px 40px; /* Increased padding for a larger look */
@@ -46,6 +56,7 @@
   position: relative;
   overflow: hidden; /* Contain the particles */
   max-width: 100%; /* Ensure it can take up full width */
+  max-width: 800px; /* Limit the maximum width for better centering */
 }
 
 .page-sentence::before {
@@ -124,19 +135,11 @@
 /* Additional CSS for the section */
 /* No changes needed, the provided CSS styles are for positioning and layout */
 /* .hero-section { */
-  /* width: 116vw; Make the section as wide as the viewport */
-  /* padding: 20px 10px 10px 0; Adjust padding for top, right, bottom, and left space */
-  /* display: flex; */
-  /* margin: 0 0 0 auto; Move the section slightly to the right */
+/* width: 116vw; Make the section as wide as the viewport */
+/* padding: 20px 10px 10px 0; Adjust padding for top, right, bottom, and left space */
+/* display: flex; */
+/* margin: 0 0 0 auto; Move the section slightly to the right */
 /* } */
-
-.hero-section {
-  width: 116vw; /* Make the section as wide as the viewport */
-  padding: 1px 10px 10px 0; /* Adjust padding for top, right, bottom, and left space */
-  display: flex;
-  overflow: hidden; /* Prevent content from overflowing */
-  margin-right: 2rem;
-}
 
 @media (max-width: 768px) {
   .hero-section {
@@ -145,5 +148,6 @@
     margin-right: 0;
   }
 }
+
 
 

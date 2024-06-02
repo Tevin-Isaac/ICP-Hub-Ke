@@ -6,7 +6,7 @@ interface ButtonProps {
   onClick?: MouseEventHandler<HTMLButtonElement>;
   size?: "normal" | "small";
   style?: "light" | "outline" | "solid";
-  color?: "white" | "primary" | "#313131" | "#5E2222" | "#F0BC39";
+  color?: "white" | "primary" | "#313131" | "#5E2222" | "#F0BC39" | "#5E2323";
   radius?: "pill" | "rounded";
 }
 
@@ -46,7 +46,9 @@ const Button = forwardRef(
             case "#5E2222":
               return "bg-[#5E2222] text-white hover:brightness-90";
             case "#F0BC39":
-              return "bg-[#F0BC39] text-white hover:brightness-90";
+              return "bg-[#F0BC39] text-#5E2323 hover:brightness -90";
+            case "#5E2323":
+              return "bg-[#5E2323] text-white hover:brightness-90";
           }
         case "outline":
           switch (color) {
@@ -59,7 +61,9 @@ const Button = forwardRef(
             case "#5E2222":
               return "bg-transparent text-[#5E2222] border border-[#5E2222] hover:bg-[#5E2222] hover:text-white";
             case "#F0BC39":
-              return "bg-transparent text-[#F0BC39] border border-[#F0BC39] hover:bg-[#F0BC39] hover:text-white";
+              return "bg-transparent text-[#F0BC39] border border-[#F0BC39] hover:bg-[#F0BC39] hover:text-#5E2323";
+            case "#5E2323":
+              return "bg-transparent text-[#5E2323] border border-[#5E2323] hover:bg-[#5E2323] hover:text-white";
           }
         case "solid":
           switch (color) {
@@ -72,7 +76,9 @@ const Button = forwardRef(
             case "#5E2222":
               return "bg-[#5E2222] text-white hover:brightness-90";
             case "#F0BC39":
-              return "bg-[#F0BC39] text-white hover:brightness-90";
+              return "bg-[#F0BC39] text-#5E2323 hover:brightness -90";
+            case "#5E2323":
+              return "bg-[#5E2323] text-white hover:brightness-90";
           }
       }
     };
