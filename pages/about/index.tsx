@@ -15,7 +15,7 @@ const About = () => {
   return (
     <PageTemplate title="About - ICP Hub Kenya">
 
-      <section className="grid grid-cols-1 lg:grid-cols-2 gap-8 place-items-center py-4 m-0">
+      <section className="grid grid-cols-1 lg:grid-cols-2 gap-4 py-4 m-0">
         <aside className="w-full m-0" data-aos="">
           <div className="w-full h-[600px] relative">
             <Image
@@ -65,7 +65,7 @@ const About = () => {
 
 
 
-      <section className="grid place-items-center gap-8 py-8 m-0">
+      <section className="grid place-items-center gap-4 py-4 m-0">
         <div
           className="sm:w-10/12 md:w-8/12 lg:w-6/12 2xl:w-5/12 text-center"
           data-aos=""
