@@ -67,12 +67,12 @@ const Home = () => {
           </div>
           <div
             data-aos=""
-            style={{ backgroundColor: "#F0BC39" }}
+            style={{ backgroundColor: "#FFEDED" }}
           >
             <FeatureCard
               title="Education"
               description="Our educational programs are designed to empower individuals and organizations with the skills and expertise needed to navigate the the blockchain and Internet Computer ecosystem."
-              icon={<FiCode style={{ color: 'white' }} />}
+              icon={<FiCode style={{ color: 'black' }} />}
             />
           </div>
 
