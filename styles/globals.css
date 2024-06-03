@@ -49,7 +49,7 @@
 }
 
 .page-sentence {
-  background-color: #FFEDED;
+  background-color: #ffeded;
   padding: 60px 40px; /* Increased padding for a larger look */
   border-radius: 15px;
   text-align: center;
@@ -71,6 +71,7 @@
   background-position: 0 0;
   animation: particles 10s linear infinite;
   mask-image: radial-gradient(circle, transparent 50%, black 70%);
+  pointer-events: none; /* Make the animation ignore mouse events */
 }
 
 @keyframes particles {
@@ -101,6 +102,8 @@
 
 .page-sentence .button-container {
   margin-top: 30px; /* Increased margin for better spacing */
+  position: relative; /* Position the button container relative to the parent */
+  z-index: 1; /* Ensure the button container is on top of the animation */
 }
 
 .page-sentence .button-container button {
