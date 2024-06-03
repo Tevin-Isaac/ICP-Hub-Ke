@@ -46,6 +46,9 @@
   padding: 20px 10px;
   overflow: hidden; /* Prevent content from overflowing */
   margin: 0 auto; /* Center the section horizontally */
+  background-color: #FFEDED;
+  border-radius: 20px;
+  margin-top: 30px;
 }
 
 .page-sentence {

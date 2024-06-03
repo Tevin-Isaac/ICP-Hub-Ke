@@ -25,7 +25,7 @@ const Home = () => {
         
           <div className="w-10/12 md:w-8/12 text-center page-sentence">
             <h1>
-              Ushering <span className="highlight">A New Era</span> Of Decentralized Applications.
+              Ushering A New Era Of Decentralized Applications
             </h1>
 
             <p>
@@ -158,7 +158,7 @@ const Home = () => {
 
 
       {/* Section with light background */}
-      <PageTemplate title="ICP Features" light>
+      <PageTemplate title="Home - ICP HUB KE" light>
         <section data-light-section className="flex flex-col gap-16 items-center mt-0">
           <div 
             className="text-center sm:w-10/12 md:w-8/12 lg:w-6/12 mt-0 mb-2 sm:mb-0" 

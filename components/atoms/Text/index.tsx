@@ -73,7 +73,7 @@ const Text = ({ value, textStyle }: TextProps) => {
       case 'SectionParagraph':
         return 'text-muted font-medium text-base leading-8'
       case 'PageTitle':
-        return 'text-white font-bold text-4xl leading-13.5'
+        return 'pt-12 mb-[-70px] text-white font-bold text-4xl leading-13.5'
       case 'PageDescription':
         return 'text-muted font-medium text-base leading-8'
       case 'PageSubtitle':
