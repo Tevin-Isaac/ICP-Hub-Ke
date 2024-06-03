@@ -67,12 +67,21 @@ const Home = () => {
           </div>
           <div
             data-aos=""
-            style={{ backgroundColor: "#FFEDED" }}
+            style={{
+              backgroundColor: "#FFEDED",
+              transition: "background-color 0.3s ease-in-out",
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.backgroundColor = "#FFE6E6";
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.backgroundColor = "#FFEDED";
+            }}
           >
             <FeatureCard
               title="Education"
               description="Our educational programs are designed to empower individuals and organizations with the skills and expertise needed to navigate the the blockchain and Internet Computer ecosystem."
-              icon={<FiCode style={{ color: 'black' }} />}
+              icon={<FiCode style={{ color: "black" }} />}
             />
           </div>
 
@@ -117,8 +126,8 @@ const Home = () => {
           <aside className="text-center sm:w-10/12 lg:text-left lg:w-full">
             <div className="space-y-12" data-aos="">
               <SectionSentence
-                title="We are a team of Developers,Project Managers,Community Managers,Designers,Technical Writers and Social Media Managers"
-                paragraph="Our team is driven by a shared commitment to empowering individuals and businesses with the transformative potential of this groundbreaking technology. Through innovation, education, and community engagement, we strive to pave the way for a more inclusive and decentralized digital future."
+                title="Working behind the scenes"
+                paragraph="Our team is driven by a shared commitment to empowering individuals and businesses with the transformative potential of this groundbreaking technology."
                 badge="OUR TEAM"
               />
               <Link href="/about" passHref>
