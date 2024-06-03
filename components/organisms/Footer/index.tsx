@@ -21,7 +21,14 @@ const Footer = () => {
           <div className="space-y-5">
             <Text value="Follow us" textStyle="FooterLinkGroupTitle" />
             <div className="space-y-[10px]">
-              <NavLink value="Twitter" href="https://twitter.com/icphub_KE" />
+              <NavLink 
+                value="Telegram" 
+                href="https://t.me/icphub_KE" 
+              />
+              <NavLink 
+                value="Twitter" 
+                href="https://twitter.com/icphub_KE" 
+              />
               <NavLink
                 value="Instagram"
                 href="https://www.instagram.com/icphub_ke/"
