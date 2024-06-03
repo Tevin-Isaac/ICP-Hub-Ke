@@ -83,6 +83,7 @@ const Home = () => {
               icon={<FiBox />}
             />
           </div>
+          
         </section>
         {/* Logo List */}
         {/* <LogoList /> */}

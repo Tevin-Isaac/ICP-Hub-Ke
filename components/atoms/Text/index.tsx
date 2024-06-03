@@ -105,8 +105,14 @@ const Text = ({ value, textStyle }: TextProps) => {
       case 'SmallCardDescription':
         return 'text-muted font-normal text-sm leading-6'
       case 'FeatureCardTitle':
+        if (value.includes('Education')) {
+          return 'text-black font-bold text-lg leading-6' 
+        }
         return 'text-white font-bold text-lg leading-6'
       case 'FeatureCardDescription':
+        if (value.includes('Our educational programs are designed to empower individuals and organizations with the skills and expertise needed to navigate the the blockchain and Internet Computer ecosystem.')) {
+          return 'text-black font-medium text-base leading-8'
+        }
         return 'text-muted font-medium text-base leading-8'
       case 'FAQTitle':
         return 'text-white font-bold text-xl leading-12'
