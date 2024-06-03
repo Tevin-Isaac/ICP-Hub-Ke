@@ -90,7 +90,7 @@ const About = () => {
             title="Meet the team! All the Credit goes to these Hardworking people"
           />
         </div>
-        <div className="w-full grid gap-2 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="w-full grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
           <div data-aos="">
             <TeamCard
               imageSrc="/images/yvonne.png"

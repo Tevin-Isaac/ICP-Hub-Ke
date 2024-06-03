@@ -9,6 +9,7 @@ import LogoList from 'components/organisms/LogoList'
 import TestimonialList from 'components/organisms/TestimonialList'
 import PageTemplate from 'components/templates/PageTemplate'
 import Image from 'next/image'
+import TeamCard from 'components/molecules/Card/TeamCard'
 import React from 'react'
 import { FiFigma, FiCode, FiBox } from 'react-icons/fi'
 import CallOut from 'components/organisms/CallOut'
@@ -145,13 +146,37 @@ const Home = () => {
             className="w-full h-[400px] relative sm:w-8/12 lg:w-full px-4 sm:px-8 md:px-12 lg:px-0"
             data-aos=""
           >
-            <Image
-              src={'/images/team-illustration.svg'}
-              layout="fill"
-              objectFit="fill"
-              alt="Code editor and UI Editing popup"
-            />
+            <div className="w-full grid grid-cols-3 gap-8 mt-4 overflow-x-auto">
+              <div className="w-32 h-32 shrink-0">
+                <img src="/images/yvonne.png" alt="" />
+              </div>
+              <div className="w-32 h-32 shrink-0">
+                <img src="/images/tevin.png" alt="" />
+              </div>
+              <div className="w-32 h-32 shrink-0">
+                <img src="/images/Mary.png" alt="" />
+              </div>
+              <div className="w-32 h-32 shrink-0">
+                <img src="/images/steve.png" alt="" />
+              </div>
+              <div className="w-32 h-32 shrink-0">
+                <img src="/images/bella.png" alt="" />
+              </div>
+              <div className="w-32 h-32 shrink-0">
+                <img src="/images/sammy.png" alt="" />
+              </div>
+              <div className="w-32 h-32 shrink-0">
+                <img src="/images/maic.png" alt="" />
+              </div>
+              <div className="w-32 h-32 shrink-0">
+                <img src="/images/orlah.png" alt="" />
+              </div>
+              <div className="w-32 h-32 shrink-0">
+                <img src="/images/charles.png" alt="" />
+              </div>
+            </div>
           </aside>
+
         </section>
         <LineDivider />
       </PageTemplate>
@@ -173,7 +198,7 @@ const Home = () => {
             <div data-aos="">
               <ProjectCard
                 lightTitle="Dev friendliness"
-                lightDescription="Developers can write contracts using popular languages like Rust, TypeScript, or Python and easily incorporate libraries from their respective ecosystem, much like they would in traditional web development."
+                lightDescription="Developers can write  cansister smart contracts using popular languages like Rust, TypeScript, or Python and easily incorporate libraries from their respective ecosystem."
                 imageSource="/images/DevFriendly2.png"
                 imageAlt="ICP Developer languages"
               />
@@ -191,7 +216,7 @@ const Home = () => {
             <div data-aos="">
               <ProjectCard
                 lightTitle="Everything On-Chain"
-                lightDescription="ICP allows developers to host their applications fully on-chain (i.e frontend and smart contract), big thanks to the web-serving capability of canister smart contracts on ICP ."
+                lightDescription="ICP allows developers to host their applications fully on-chain (i.e frontend and smart contract), big thanks to the web-serving capability of canister smart contracts on ICP."
                 imageSource="/images/Onchain2.png"
                 imageAlt="Host everything on chain using ICP"
               />
@@ -199,7 +224,7 @@ const Home = () => {
             <div data-aos="">
               <ProjectCard
                 lightTitle="Very very cheap!"
-                lightDescription="The cost of storing data on-chain with ICP is just $5 USD per GB per year. This is significantly lower as compared to other chains such as Ethereum and Solana"
+                lightDescription="The cost of storing data on-chain with ICP is just $5 USD per GB per year. This is significantly lower as compared to other chains that currently exist."
                 imageSource="/images/VeryCheap.png"
                 imageAlt="ICP is very cheap as compared to other chains"
               />
