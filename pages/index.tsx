@@ -191,7 +191,7 @@ const Home = () => {
             <div data-aos="">
               <ProjectCard
                 lightTitle="Everything On-Chain"
-                lightDescription="ICP allows developers to host their applications fully on-chain (i.e frontend and smart contract), big thanks to the web-serving capability of canister smart contracts on ICP and their ability to host large amounts of data. DeFi platforms can exist 100% onchain with no dependency on centralized components."
+                lightDescription="ICP allows developers to host their applications fully on-chain (i.e frontend and smart contract), big thanks to the web-serving capability of canister smart contracts on ICP ."
                 imageSource="/images/Onchain2.png"
                 imageAlt="Host everything on chain using ICP"
               />

@@ -41,7 +41,7 @@ const NavBar = () => {
       }
     }
 
-    if (window.scrollY > 150) {
+    if (window.scrollY > 0) {
       setIsScrolled(true);
     } else {
       setIsScrolled(false);
@@ -60,59 +60,61 @@ const NavBar = () => {
 
   return (
     <>
-      <nav
-        className={`pt-8 w-full top-0 left-0 z-30 ${
-          isScrolled ? "fixed" : "absolute"
-        }`}
-      >
-        <Container>
-          <div
-            className={`${
-              browserName === "Firefox" ? "bg-gray-900" : "bg-light"
-            } ${
-              isLightSectionVisible ? "bg-[#FFEDED]" : ""
-            } px-6 py-4 w-full rounded-md backdrop-blur-3xl ${
-              isScrolled || isOpen ? "" : "lg:bg-transparent lg:px-0"
-            }`}
-          >
-            <div className="flex flex-col lg:flex-row w-full place-content-between lg:place-items-center">
-              <div className="w-full flex flex-row place-content-between place-items-center lg:w-fit">
-                <NavBrand />
-                <div className="lg:hidden" onClick={() => setIsOpen(!isOpen)}>
-                  <div
-                    className={`text-white text-2xl ${
-                      isMobile ? "cursor-default" : "cursor-pointer"
-                    }`}
-                  >
-                    {isOpen ? <FiX /> : <FiMenu />}
+      {!isScrolled && (
+        <nav
+          className={`pt-8 w-full top-0 left-0 z-30 ${
+            isScrolled ? "fixed" : "absolute"
+          }`}
+        >
+          <Container>
+            <div
+              className={`${
+                browserName === "Firefox" ? "bg-gray-900" : "bg-light"
+              } ${
+                isLightSectionVisible ? "bg-[#FFEDED]" : ""
+              } px-6 py-4 w-full rounded-md backdrop-blur-3xl ${
+                isScrolled || isOpen ? "" : "lg:bg-transparent lg:px-0"
+              }`}
+            >
+              <div className="flex flex-col lg:flex-row w-full place-content-between lg:place-items-center">
+                <div className="w-full flex flex-row place-content-between place-items-center lg:w-fit">
+                  <NavBrand />
+                  <div className="lg:hidden" onClick={() => setIsOpen(!isOpen)}>
+                    <div
+                      className={`text-white text-2xl ${
+                        isMobile ? "cursor-default" : "cursor-pointer"
+                      }`}
+                    >
+                      {isOpen ? <FiX /> : <FiMenu />}
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div
-                className={`${
-                  isOpen ? "" : "hidden "
-                } space-y-5 mt-4 lg:mt-0 lg:space-y-0 lg:space-x-16 lg:flex lg:place-items-center`}
-              >
-                <NavLink href="/education" value="Education" canActive={true} />
-                <NavLink href="/events" value="Events" canActive={true} />
-                <NavLink href="/blog" value="Blog" canActive={true} />
-                <NavLink href="/about" value="About" canActive={true} />
-              </div>
-              <div
-                className={`${isOpen ? "" : "hidden "} lg:block mt-5 lg:mt-0`}
-              >
-                <ButtonLink
-                  value="Contact"
-                  style="solid"
-                  color="#F0BC39"
-                  size="small"
-                  href="/contact"
-                />
+                <div
+                  className={`${
+                    isOpen ? "" : "hidden "
+                  } space-y-5 mt-4 lg:mt-0 lg:space-y-0 lg:space-x-16 lg:flex lg:place-items-center`}
+                >
+                  <NavLink href="/education" value="Education" canActive={true} />
+                  <NavLink href="/events" value="Events" canActive={true} />
+                  <NavLink href="/blog" value="Blog" canActive={true} />
+                  <NavLink href="/about" value="About" canActive={true} />
+                </div>
+                <div
+                  className={`${isOpen ? "" : "hidden "} lg:block mt-5 lg:mt-0`}
+                >
+                  <ButtonLink
+                    value="Contact"
+                    style="solid"
+                    color="#F0BC39"
+                    size="small"
+                    href="/contact"
+                  />
+                </div>
               </div>
             </div>
-          </div>
-        </Container>
-      </nav>
+          </Container>
+        </nav>
+      )}
     </>
   );
 };
