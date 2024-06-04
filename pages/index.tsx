@@ -115,7 +115,7 @@ const Home = () => {
   >
     <SectionSentence
       title="What is the
-      ICP blockchain?"
+      Vision of ICP blockchain?"
       paragraph="ICP's vision is that most of the world's software will be replaced by smart contracts. To realize that vision, ICP is designed to make smart contracts as powerful as traditional software."
       badge="WHAT WE DO"
     />
