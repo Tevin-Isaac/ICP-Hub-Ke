@@ -98,6 +98,7 @@ const NavBar = () => {
                   <NavLink href="/events" value="Events" canActive={true} />
                   <NavLink href="/blog" value="Blog" canActive={true} />
                   <NavLink href="/about" value="About" canActive={true} />
+                  <NavLink href="/partners" value="Our Partners" canActive={true} />
                 </div>
                 <div
                   className={`${isOpen ? "" : "hidden "} lg:block mt-5 lg:mt-0`}
