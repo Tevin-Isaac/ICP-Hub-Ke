@@ -138,3 +138,35 @@
     font-size: 1rem;
   }
 }
+
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.animate-marquee-item {
+  display: inline-block;
+  padding-right: 2rem; /* Adjust space between items as needed */
+  animation: marquee 20s linear infinite;
+}
+
+h2 {
+  font-size: 1.5rem; /* Adjust size as needed */
+  font-weight: bold;
+  margin-bottom: 1rem; /* Adjust spacing as needed */
+  text-align: center;
+}

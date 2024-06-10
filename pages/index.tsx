@@ -8,6 +8,7 @@ import SectionSentence from 'components/molecules/SectionSentence'
 import LogoList from 'components/organisms/LogoList'
 import TestimonialList from 'components/organisms/TestimonialList'
 import PageTemplate from 'components/templates/PageTemplate'
+
 import Image from 'next/image'
 import TeamCard from 'components/molecules/Card/TeamCard'
 import React from 'react'
@@ -19,6 +20,8 @@ import Link from 'next/link'
 const Home = () => {
   return (
     <>
+
+    
         <PageTemplate title="Home - ICP HUB KE">
         {/* Banner Section */}
         <section className="hero-section" data-aos="">
@@ -53,8 +56,11 @@ const Home = () => {
             title="What We Offer"
           />
         </div>
-
-
+        <SectionSentence 
+              lightTitle="ICP has unique features" 
+              lightBadge="WHAT ICP OFFERS TODAY" 
+            />
+      
 
 
         <section className="grid grid-cols-1 gap-5 md:grid-cols-3 mb-16">
@@ -121,6 +127,7 @@ const Home = () => {
     />
   </aside>
 </section>
+<LogoList />
 
         {/* Our Teams */}
         <section className="grid grid-cols-1 gap-6 sm:gap-8 place-items-center lg:grid-cols-2 px-4 sm:px-8 md:px-12 lg:px-0">
@@ -179,6 +186,7 @@ const Home = () => {
 
         </section>
         <LineDivider />
+       
       </PageTemplate>
 
 
