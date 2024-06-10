@@ -154,6 +154,8 @@
   display: inline-block;
   width: 500%;
   animation: marquee 30s linear infinite;
+  animation-iteration-count: infinite;
+  background-color: white;
 }
 
 .animate-marquee:hover {
@@ -164,6 +166,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  animation: marquee 30s linear infinite;
 }
 
 h2 {
