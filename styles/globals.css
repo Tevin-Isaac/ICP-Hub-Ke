@@ -20,6 +20,7 @@
     @apply my-32;
   }
 }
+
 @layer components {
   .swiper {
     @apply px-4 sm:px-24 md:px-36 lg:px-64 xl:px-72 pb-24 !important;
@@ -37,16 +38,16 @@
     @apply border-2 border-primary mt-0 !important;
   }
 }
+
 /* CSS for centering the hero section and its content */
-/* No specific instructions provided, so no changes made */
 .hero-section {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   padding: 20px 10px;
-  overflow: hidden; /* Prevent content from overflowing */
-  margin: 0 auto; /* Center the section horizontally */
+  overflow: hidden;
+  margin: 0 auto;
   background-color: #ffeded;
   border-radius: 20px;
   margin-top: 30px;
@@ -64,7 +65,7 @@
   background-size: 20px 20px;
   background-position: 0 0;
   animation: particles 10s linear infinite;
-  pointer-events: none; /* Make the animation ignore mouse events */
+  pointer-events: none;
 }
 
 @keyframes particles {
@@ -79,17 +80,17 @@
 
 .page-sentence {
   background-color: #ffeded;
-  padding: 60px 40px; /* Increased padding for a larger look */
+  padding: 60px 40px;
   border-radius: 15px;
   text-align: center;
   position: relative;
-  overflow: hidden; /* Contain the particles */
-  max-width: 100%; /* Ensure it can take up full width */
-  max-width: 800px; /* Limit the maximum width for better centering */
+  overflow: hidden;
+  max-width: 100%;
+  max-width: 800px;
 }
 
 .page-sentence h1 {
-  font-size: 2.5rem; /* Increased font size for hero section */
+  font-size: 2.5rem;
   font-weight: bold;
   color: #333;
 }
@@ -99,25 +100,25 @@
 }
 
 .page-sentence p {
-  font-size: 1.5rem; /* Increased font size for better readability */
+  font-size: 1.5rem;
   color: #666;
   margin-top: 10px;
 }
 
 .page-sentence .button-container {
-  margin-top: 30px; /* Increased margin for better spacing */
-  position: relative; /* Position the button container relative to the parent */
-  z-index: 1; /* Ensure the button container is on top of the animation */
+  margin-top: 30px;
+  position: relative;
+  z-index: 1;
 }
 
 .page-sentence .button-container button {
   background-color: #5e2222;
   color: white;
-  padding: 15px 30px; /* Increased padding for a larger button */
+  padding: 15px 30px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 1.25rem; /* Increased font size for the button text */
+  font-size: 1.25rem;
 }
 
 @media (max-width: 768px) {
@@ -139,34 +140,35 @@
   }
 }
 
-
+/* Updated Marquee Animation Styles */
 @keyframes marquee {
   0% {
     transform: translateX(0%);
   }
-  50% {
-    transform: translateX(-100%);
-  }
   100% {
-    transform: translateX(0%);
+    transform: translateX(-100%);
   }
 }
 
 .animate-marquee {
-  display: flex;
-  overflow: hidden;
-  white-space: nowrap;
+  display: inline-block;
+  width: 500%;
+  animation: marquee 30s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
 }
 
 .animate-marquee-item {
-  display: inline-block;
-  padding-right: 2rem; /* Adjust space between items as needed */
-  animation: marquee 20s linear infinite;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 h2 {
-  font-size: 1.5rem; /* Adjust size as needed */
+  font-size: 1.5rem;
   font-weight: bold;
-  margin-bottom: 1rem; /* Adjust spacing as needed */
+  margin-bottom: 1rem;
   text-align: center;
 }
