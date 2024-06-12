@@ -49,7 +49,7 @@ const Home = () => {
         </section> 
         {/* Feature List */}
         <div
-          className="sm:w-10/12 md:w-8/12 lg:w-6/12 2xl:w-5/12 text-center mx-auto"
+          className="sm:w-10/12 md:w-8/12 lg:w-6/12 2xl:w-5/12 text-center mx-auto text-black" // Added text-black class for better visibility on mobile
           data-aos=""
         >
           <PageSentence

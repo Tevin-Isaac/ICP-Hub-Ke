@@ -77,6 +77,24 @@
     transform: rotate(360deg);
   }
 }
+@media (max-width: 768px) {
+  .page-sentence {
+    padding: 40px 20px;
+  }
+
+  .page-sentence h1 {
+    font-size: 2rem;
+  }
+
+  .page-sentence p {
+    font-size: 1.2rem;
+  }
+
+  .page-sentence .button-container button {
+    padding: 12px 24px;
+    font-size: 1rem;
+  }
+}
 
 .page-sentence {
   background-color: #ffeded;
