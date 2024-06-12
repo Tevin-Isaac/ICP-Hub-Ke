@@ -11,7 +11,7 @@ const partnerNames = [
   "ETH Safari",
   "GDG",
   "GDSC",
-  "G",
+  "Bitget",
   "KBLD",
   "Kisii University",
   "Egerton University",
@@ -37,7 +37,7 @@ const partnerNames = [
   "Atlas Network",
   "Web3 Bridge",
   "She Code Africa",
-  "B",
+  "Busha",
   "Bitcoin Events",
   "Bioniq",
 ];
