@@ -127,7 +127,7 @@ const Home = () => {
     />
   </aside>
 </section>
-<LogoList />
+{/* <LogoList /> */}
 
         {/* Our Teams */}
         <section className="grid grid-cols-1 gap-6 sm:gap-8 place-items-center lg:grid-cols-2 px-4 sm:px-8 md:px-12 lg:px-0">
