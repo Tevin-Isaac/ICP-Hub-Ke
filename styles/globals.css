@@ -140,26 +140,10 @@
   }
 }
 
-/* Updated Marquee Animation Styles */
-@keyframes marquee {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
+/* Static Marquee Styles */
 .animate-marquee {
   display: inline-block;
-  width: 500%;
-  animation: marquee 30s linear infinite;
-  animation-iteration-count: infinite;
-  background-color: white;
-}
-
-.animate-marquee:hover {
-  animation-play-state: paused;
+  width: 100%;
 }
 
 .animate-marquee-item {
