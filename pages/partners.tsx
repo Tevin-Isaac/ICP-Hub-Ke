@@ -13,7 +13,7 @@ const Partners = () => {
           title="Our strategic partners"
         />
         <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-8 mb-8 mt-28">
-          {[...Array(23)].map((_, index) => (
+          {[...Array(34)].map((_, index) => (
             <div key={index} className="flex justify-center">
               <Image
                 src={`/images/partner-logos/partner-logo-${index + 1}.png`}
