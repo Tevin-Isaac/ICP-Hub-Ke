@@ -31,31 +31,28 @@ const LogoList = () => {
             className="p-2 bg-gray-200 rounded-full"
             onClick={handlePrevious}
           >
-            {"<"}
+            &lt;
           </button>
           <div className="flex space-x-4 overflow-hidden w-full justify-center">
-            <div
-              className="flex transition-transform duration-500 animate-slide"
-              style={{ transform: `translateX(-${currentIndex * 150}px)` }}
-            >
+            <div className="flex transition-transform duration-500" style={{ transform: `translateX(-${currentIndex * 150}px)` }}>
               {logoData.map((logo, index) => (
-                <div
-                  key={index}
-                  className="shrink-0 transition-all duration-500 hover:scale-110 mx-2"
-                >
+                <div key={index} className="shrink-0 transition-all duration-500 hover:scale-110 mx-2">
                   <Image
                     src={logo.src}
                     alt={logo.alt}
-                    width={180}
-                    height={85}
+                    width={150}
+                    height={75}
                     className="rounded-lg shadow-lg"
                   />
                 </div>
               ))}
             </div>
           </div>
-          <button className="p-2 bg-gray-200 rounded-full" onClick={handleNext}>
-            {">"}
+          <button
+            className="p-2 bg-gray-200 rounded-full"
+            onClick={handleNext}
+          >
+            &gt;
           </button>
         </div>
       </div>
