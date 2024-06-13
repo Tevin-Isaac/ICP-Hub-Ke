@@ -1,9 +1,9 @@
-import React from 'react'
-import PageTemplate from 'components/templates/PageTemplate'
-import PageSentence from 'components/molecules/PageSentence'
-import LineDivider from 'components/atoms/LineDivider'
-import Footer from 'components/organisms/Footer'
-import Image from 'next/image'
+import React from "react";
+import PageTemplate from "components/templates/PageTemplate";
+import PageSentence from "components/molecules/PageSentence";
+import LineDivider from "components/atoms/LineDivider";
+import Footer from "components/organisms/Footer";
+import Image from "next/image";
 
 const partnerNames = [
   "Africa's Talking",
@@ -11,10 +11,10 @@ const partnerNames = [
   "ETH Safari",
   "GDG",
   "GDSC",
-  "_",
+  "Bitget",
   "KBLD",
   "Kisii University",
-  "Machakos university",
+  "Egerton University",
   "Lux Tech Academy",
   "Machakos University",
   "Memoi",
@@ -37,36 +37,43 @@ const partnerNames = [
   "Atlas Network",
   "Web3 Bridge",
   "She Code Africa",
-  "_",
+  "Busha",
   "Bitcoin Events",
   "Bioniq",
-]
+];
 
 const Partners = () => {
   return (
-    <>
-      <PageTemplate title="Partners - ICP Hub Kenya">
-        <PageSentence
-          title="Our strategic partners"
-        />
-        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-8 mb-8 mt-28">
-          {partnerNames.map((partnerName, index) => (
-            <div key={index} className="flex justify-center flex-col">
-              <Image
-                src={`/images/partner-logos/partner-logo-${index + 1}.png`}
-                alt={`Partner Logo ${index + 1}`}
-                width={700}
-                height={450}
-              />
-              <p className='text-center m-2'>{partnerName}</p>
-            </div>
-          ))}
+    <PageTemplate title="Partners - ICP Hub Kenya">
+      <PageSentence title="" />
+      <div className="bg-white py-12">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 gap-4">
+            {partnerNames.map((partnerName, index) => (
+              <div
+                key={index}
+                className="flex justify-center flex-col items-center"
+              >
+                <div className="relative group">
+                  <Image
+                    src={`/images/partner-logos/partner-logo-${index + 1}.png`}
+                    alt={`Logo of ${partnerName}`}
+                    width={1000}
+                    height={800}
+                    objectFit="contain"
+                    className="transition-transform duration-300 transform group-hover:scale-105"
+                  />
+                  <p className="text-center m-1 text-sm">{partnerName}</p>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
-        <Footer />
-        <LineDivider />
-      </PageTemplate>
-    </>
-  )
-}
+      </div>
+      <Footer />
+      <LineDivider />
+    </PageTemplate>
+  );
+};
 
-export default Partners
+export default Partners;

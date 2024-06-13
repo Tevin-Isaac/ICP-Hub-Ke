@@ -49,7 +49,7 @@ const Home = () => {
         </section> 
         {/* Feature List */}
         <div
-          className="sm:w-10/12 md:w-8/12 lg:w-6/12 2xl:w-5/12 text-center mx-auto"
+          className="sm:w-10/12 md:w-8/12 lg:w-6/12 2xl:w-5/12 text-center mx-auto text-black" // Added text-black class for better visibility on mobile
           data-aos=""
         >
           <PageSentence
@@ -121,7 +121,7 @@ const Home = () => {
     />
   </aside>
 </section>
-<LogoList />
+{/* <LogoList /> */}
 
         {/* Our Teams */}
         <section className="grid grid-cols-1 gap-6 sm:gap-8 place-items-center lg:grid-cols-2 px-4 sm:px-8 md:px-12 lg:px-0">
