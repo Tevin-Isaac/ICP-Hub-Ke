@@ -99,16 +99,17 @@ const Home = () => {
         {/* <LogoList /> */}
         {/* How We Work */}
         <section className="grid grid-cols-1 gap-6 sm:gap-8 place-items-center lg:grid-cols-2">
-        <aside className="w-full h-[287px] relative" data-aos="">
-          {/* Replace the Image component with an iframe for YouTube video */}
-          <iframe
-            className="w-full h-full absolute inset-0 sm:aspect-w-16 sm:aspect-h-9"
-            src="https://www.youtube.com/embed/mqLoCgpDotI"
-            title="Video"
-            frameBorder="1"
-            allowFullScreen
-          ></iframe>
-        </aside>
+        <aside className="video-container" data-aos="">
+  <iframe
+    className="video-iframe"
+    src="https://www.youtube.com/embed/mqLoCgpDotI"
+    title="Video"
+    frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowFullScreen
+  ></iframe>
+</aside>
+
   <aside
     className="text-center sm:w-10/12 lg:text-left lg:w-full"
     data-aos=""
